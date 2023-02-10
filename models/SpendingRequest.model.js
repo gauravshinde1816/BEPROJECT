@@ -12,9 +12,21 @@ const SpendingRequest = new mongoose.Schema(
       type: String,
       required: true,
     },
+    ideaPersonID: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "idea_person",
+    },
+    vendorID: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "vendor",
+    },
     amount: {
       type: Number,
       required: true,
+    },
+
+    totalAmountRaised: {
+      type: Number,
     },
 
     productDetails: {
@@ -25,6 +37,9 @@ const SpendingRequest = new mongoose.Schema(
       type: Date,
       default: minuteFromNow,
     },
+    isApproved: {
+      type: Boolean,
+    },
     isOpen: {
       type: Boolean,
       default: false,
@@ -33,6 +48,14 @@ const SpendingRequest = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "startup",
     },
+    votes: [
+      {
+        user: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "user",
+        },
+      },
+    ],
   },
   {
     timestamps: true,

@@ -2,6 +2,7 @@ const express = require("express");
 var bcrypt = require("bcryptjs");
 const UserModel = require("../../models/User.model");
 const InvestorModel = require("../../models/Investor.model");
+const IdeaPersonModel = require("../../models/IdeaPerson.model");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -19,8 +20,6 @@ router.post("/", async (req, res) => {
     const { name, age, password, address, interests, role, email } = req.body;
 
     let user = await UserModel.findOne({ email });
-
-    console.log(user);
 
     if (user) {
       return res.status(400).json({ msg: "User already exists" });
@@ -47,12 +46,18 @@ router.post("/", async (req, res) => {
       await investor.save();
     }
 
+    // if user is IDEAPERSON
+    if (role == "IDEAPERSON") {
+      let ideaPerson = new IdeaPersonModel({
+        userDetails: user._id,
+      });
+      await ideaPerson.save();
+    }
+
     await user.save();
 
     return res.status(200).json({ user });
   } catch (error) {
-    console.log(error.message);
-
     return res.status(500).json({ msg: " Internal server error" });
   }
 });

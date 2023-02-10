@@ -4,28 +4,30 @@ const StartupSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  ideaPerson : {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "idea_people",
+  }, 
   category: {
     type: String,
     enum: ["EDTECH", "FINTECH", "LIFESTYLE", "SOCIAL"],
   },
-  //   totalInvestMent: {
-  //     typr: Number,
-  //     default: 0,
-  //   },
-  //   totalInvestMentRounds: {
-  //     type: Number,
-  //     default: 0,
-  //   },
 
-  investments: [
+  spendingRequest: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "investment",
+      ref: "spending_request",
     },
   ],
   description: {
     type: String,
     default: "",
+  },
+  companySize: {
+    type: String,
+  },
+  foundedIn: {
+    type: String,
   },
   image: {
     type: String,

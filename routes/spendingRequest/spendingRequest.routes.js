@@ -20,6 +20,9 @@ router.post("/", async (req, res) => {
     const spendingRequest = new SpendingRequestModel({
       title,
       amount,
+      ideaPersonID: "63e5e697b46f052b84a58475",
+      vendorID: "63e5ea6d6476252749e64beb",
+      startup:"63e5e94fd4696f0a549c6651",
       productDetails,
       expiryDate,
     });

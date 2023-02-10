@@ -1,8 +1,11 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const IdeaPersonSchema = new Schema({
+const IdeaPersonSchema = new mongoose.Schema({
+  userDetails: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user",
+    required: true,
+  },
+});
 
-})
-
-
-module.exports = mogoose.model('idea_person' ,  IdeaPersonSchema)
+module.exports = mongoose.model("idea_person", IdeaPersonSchema);
