@@ -4,9 +4,9 @@ const StartupSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  ideaPerson : {
+  user : {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "idea_people",
+    ref: "user",
   }, 
   category: {
     type: String,

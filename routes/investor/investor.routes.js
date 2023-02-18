@@ -16,6 +16,21 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:investor_id", async (req, res) => {
+  try {
+    const id = req.params["investor_id"];
+    const investor = await InvestorModel.findById(id);
+
+    if (!investor) {
+      return res.status(400).json({ msg: "No investor with given ID" });
+    }
+    return res.status(200).json({investor});
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ msg: "Internal Server Error" });
+  }
+});
+
 router.post(
   "/invest/:investor/:startup/:spending_request",
   async (req, res) => {
@@ -28,7 +43,9 @@ router.post(
 
       let investor = await InvestorModel.findById(investorID);
       let startup = await StartupModel.findById(startupID);
-      let spending_request = await SpendingRequestModel.findById(spending_requestID);
+      let spending_request = await SpendingRequestModel.findById(
+        spending_requestID
+      );
 
       console.log(investor);
       console.log(startup);
