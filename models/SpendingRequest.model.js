@@ -42,7 +42,7 @@ const SpendingRequest = new mongoose.Schema(
     },
     isOpen: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     startup: {
       type: mongoose.Schema.Types.ObjectId,
