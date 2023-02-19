@@ -1,4 +1,9 @@
 {
   "MONGO_URI": "mongodb+srv://gaurav:gaurav123@cluster0.ffhnw.mongodb.net/beproject?retryWrites=true&w=majority",
-  "SECRET" :"nksacnkcnkank"
+  "SECRET" :"nksacnkcnkank",
+  "INFURA_KEY":"bc20c16293fe48439afe5e51e4528cef",
+  "HOST_ADDRESS" : "0xB9fce97C3184acE9B18a80613344067F42ef3F7A",
+  "SENDING_ADDRESS" : "0x8848fec01a964806f4AA6d404A277F242319ED78",
+  "PRIVATE_KEY" :"c68fd3d988d4dda2ec14b6223546304745e992877ee2f38ccddbbd45046e574f",
+  "TEST_NET" :"https://goerli.infura.io/v3/bc20c16293fe48439afe5e51e4528cef"
 }
