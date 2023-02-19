@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const connectDB = require("./config/db");
 const path = require("path");
+const cors = require("cors")
 const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/user/user.routes");
 const startupRoutes = require("./routes/startup/startup.routes");
@@ -20,6 +21,7 @@ const config = {
 };
 
 //middleware
+app.use(cors())
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(auth(config));
