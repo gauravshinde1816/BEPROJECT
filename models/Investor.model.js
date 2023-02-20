@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const InvestorSchema = new mongoose.Schema({
   userDetails: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "user",
-    required: true,
+    ref: "user"
   },
   investmentfirmDetails: {
     type: String,

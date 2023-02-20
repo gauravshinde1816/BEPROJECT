@@ -4,7 +4,6 @@ const VendorModel = new mongoose.Schema(
   {
     userDetails: {
       type: mongoose.Schema.Types.ObjectId,
-      required: true,
     },
     spendingRequest: [
       {
