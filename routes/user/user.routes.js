@@ -1,10 +1,12 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const config = require("config");
-var bcrypt = require("bcryptjs");
+const bcrypt = require("bcryptjs");
+const auth = require("../../middleware/auth");
 const UserModel = require("../../models/User.model");
 const InvestorModel = require("../../models/Investor.model");
 const IdeaPersonModel = require("../../models/IdeaPerson.model");
+const VendorModel = require("../../models/Vendor.model");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -14,6 +16,58 @@ router.get("/", async (req, res) => {
   } catch (error) {
     console.log(error);
     return res.status(500).json({ msg: "Internel server error" });
+  }
+});
+
+router.get("/profile", auth, async (req, res) => {
+  try {
+    // const user = await UserModel.findById(req.user.id);
+    const investorDetails = VendorModel.findOne({
+      userDetails: req.user.id,
+  });
+
+    if (!investorDetails) {
+      return res.status(400).json({ msg: " User Does not exists" });
+    }
+    console.log("User : " , investorDetails)
+
+  
+
+    // if (user.role === "INVESTOR") {
+    //   const investorDetails = InvestorModel.findOne({
+    //     userDetails: req.user.id,
+    //   });
+
+    //   if (!investorDetails) {
+    //     return res
+    //       .status(400)
+    //       .json({ msg: " investorDetails Does not exists" });
+    //   }
+
+    //   response.investorDetails = investorDetails;
+    // } else if (user.role === "IDEAPERSON") {
+    //   const ideapersonDetails = IdeaPersonModel.findOne({
+    //     userDetails: req.user.id,
+    //   });
+
+    //   if (!ideapersonDetails) {
+    //     return res
+    //       .status(400)
+    //       .json({ msg: " ideapersonDetails Does not exists" });
+    //   }
+
+    //   response.ideapersonDetails = ideapersonDetails;
+    // } else {
+    //   const vendorDetails = VendorModel.findOne({ userDetails: req.user.id });
+    //   if (!vendorDetails) {
+    //     return res.status(400).json({ msg: " vendorDetails Does not exists" });
+    //   }
+    //   response.vendorDetails = vendorDetails;
+    // }
+    return res.status(200).json({user});
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ msg: "Internal server error" });
   }
 });
 
@@ -33,13 +87,14 @@ router.post("/", async (req, res) => {
     user = new UserModel({
       name,
       age,
-      password : hashpassword,
+      password: hashpassword,
       address,
       interests,
       role,
       email,
     });
 
+    await user.save();
     // if user is investor
     if (role == "INVESTOR") {
       let investor = new InvestorModel({
@@ -56,7 +111,12 @@ router.post("/", async (req, res) => {
       await ideaPerson.save();
     }
 
-    await user.save();
+    // if user is VENDOR
+    if (role == "VENDOR") {
+      const vendor = new VendorModel({
+        userDetails: user._id,
+      });
+    }
 
     const payload = {
       user: {
@@ -106,7 +166,7 @@ router.post("/login", async (req, res) => {
       }
     });
   } catch (error) {
-    console.log(error.message)
+    console.log(error.message);
     return res.status(500).json({ msg: " Internal server error" });
   }
 });

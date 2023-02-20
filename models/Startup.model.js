@@ -1,3 +1,19 @@
+// "spendingRequest": [],
+// "description": "Contact Radiation of Pleura",
+// "image": "http://dummyimage.com/189x100.png/cc0000/ffffff",
+// "_id": "63ed23ecc3f9033081e4b077",
+// "name": "Voolia",
+// "ideaPerson": "Dion",
+// "category": "Finance",
+// "gender": "Female",
+// "companySize": "5338",
+// "foundedIn": "2004",
+// "valuation": "786",
+// "ceo": "Dion Dahmke",
+// "country": "Brazil",
+// "headQuarters": "Salto",
+// "__v": 2
+
 const mongoose = require("mongoose");
 const StartupSchema = new mongoose.Schema({
   name: {
@@ -6,11 +22,10 @@ const StartupSchema = new mongoose.Schema({
   },
   ideaPerson: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "idea_people",
-  },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
     ref: "user",
+  },
+  gender: {
+    type: String,
   },
   category: {
     type: String,
@@ -29,7 +44,19 @@ const StartupSchema = new mongoose.Schema({
   companySize: {
     type: String,
   },
+  ceo: {
+    type: String,
+  },
   foundedIn: {
+    type: String,
+  },
+  valuation: {
+    type: Number,
+  },
+  country: {
+    type: String,
+  },
+  headQuarters: {
     type: String,
   },
   image: {
