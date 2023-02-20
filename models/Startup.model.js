@@ -8,6 +8,10 @@ const StartupSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "idea_people",
   },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user",
+  },
   category: {
     type: String,
     // enum: ["EDTECH", "FINTECH", "LIFESTYLE", "SOCIAL"],
