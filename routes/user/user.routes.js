@@ -21,50 +21,47 @@ router.get("/", async (req, res) => {
 
 router.get("/profile", auth, async (req, res) => {
   try {
-    // const user = await UserModel.findById(req.user.id);
-    const investorDetails = VendorModel.findOne({
-      userDetails: req.user.id,
-  });
-
-    if (!investorDetails) {
-      return res.status(400).json({ msg: " User Does not exists" });
+    let response = {};
+    const user = await UserModel.findById(req.user.id);
+    if (!user) {
+      return res.status(400).json({ msg: "User Not found" });
     }
-    console.log("User : " , investorDetails)
+    response.user = user
 
-  
+    if (user.role === "INVESTOR") {
+      const investorDetails = await InvestorModel.findOne({
+        userDetails: req.user.id,
+      });
 
-    // if (user.role === "INVESTOR") {
-    //   const investorDetails = InvestorModel.findOne({
-    //     userDetails: req.user.id,
-    //   });
+      if (!investorDetails) {
+        return res
+          .status(400)
+          .json({ msg: " investorDetails Does not exists" });
+      }
 
-    //   if (!investorDetails) {
-    //     return res
-    //       .status(400)
-    //       .json({ msg: " investorDetails Does not exists" });
-    //   }
+      response.investorDetails = investorDetails;
+    } else if (user.role === "IDEAPERSON") {
+      const ideapersonDetails = await IdeaPersonModel.findOne({
+        userDetails: req.user.id,
+      });
 
-    //   response.investorDetails = investorDetails;
-    // } else if (user.role === "IDEAPERSON") {
-    //   const ideapersonDetails = IdeaPersonModel.findOne({
-    //     userDetails: req.user.id,
-    //   });
+      if (!ideapersonDetails) {
+        return res
+          .status(400)
+          .json({ msg: " ideapersonDetails Does not exists" });
+      }
 
-    //   if (!ideapersonDetails) {
-    //     return res
-    //       .status(400)
-    //       .json({ msg: " ideapersonDetails Does not exists" });
-    //   }
-
-    //   response.ideapersonDetails = ideapersonDetails;
-    // } else {
-    //   const vendorDetails = VendorModel.findOne({ userDetails: req.user.id });
-    //   if (!vendorDetails) {
-    //     return res.status(400).json({ msg: " vendorDetails Does not exists" });
-    //   }
-    //   response.vendorDetails = vendorDetails;
-    // }
-    return res.status(200).json({user});
+      response.ideapersonDetails = ideapersonDetails;
+    } else {
+      const vendorDetails = await VendorModel.findOne({
+        userDetails: req.user.id,
+      });
+      if (!vendorDetails) {
+        return res.status(400).json({ msg: " vendorDetails Does not exists" });
+      }
+      response.vendorDetails = vendorDetails;
+    }
+    return res.status(200).json(response);
   } catch (error) {
     console.log(error.message);
     return res.status(500).json({ msg: "Internal server error" });
