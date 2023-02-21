@@ -29,13 +29,15 @@ const StartupSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ["EDTECH", "FINTECH", "LIFESTYLE", "SOCIAL"],
+    enum: ["EDTECH", "FINTECH", "LIFESTYLE", "SOCIAL", "Finance" , "n/a"],
   },
 
   spendingRequest: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "spending_request",
+      spendingRequestID: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "spending_request",
+      },
     },
   ],
   description: {
