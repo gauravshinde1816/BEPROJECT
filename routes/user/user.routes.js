@@ -117,6 +117,7 @@ router.post("/", async (req, res) => {
       const vendor = new VendorModel({
         userDetails: user._id,
       });
+      await vendor.save();
     }
 
     const payload = {
