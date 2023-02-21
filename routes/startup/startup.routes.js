@@ -55,7 +55,6 @@ router.post("/", auth, async (req, res) => {
       foundedIn,
       valuation,
       ceo,
-      gender,
       country,
       headQuarters,
     } = req.body;
@@ -70,7 +69,6 @@ router.post("/", auth, async (req, res) => {
       foundedIn,
       valuation,
       ceo,
-      gender,
       country,
       headQuarters,
     });
