@@ -1,6 +1,7 @@
 const express = require("express");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
 const auth = require("../../middleware/auth");
+const StartupModel = require("../../models/Startup.model");
 
 const router = express.Router();
 router.get("/", async (req, res) => {
@@ -72,23 +73,38 @@ router.put("/:spending_requestid/downvote", auth, async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/:startupid", auth, async (req, res) => {
   try {
     const { title, amount, productDetails } = req.body;
+    const startupID  = req.params["startupid"]
 
-    const spendingRequest = new SpendingRequestModel({
+    const spendingR = new SpendingRequestModel({
       title,
       amount,
-      ideaPersonID: "63e5e697b46f052b84a58475",
+      ideaPersonID: req.user.id,
       vendorID: "63e5ea6d6476252749e64beb",
-      startup: "63e5e94fd4696f0a549c6651",
+      startup: startupID,
       productDetails,
     });
 
-    await spendingRequest.save();
-    return res.status(200).json(spendingRequest);
+    await spendingR.save();
+
+    const startup = await StartupModel.findById(startupID)
+
+
+    if(!startup){
+      return res.status(400).json({msg: "Start up does not exists"})
+    }
+    console.log(startup)
+
+    startup.spendingRequest.push({spendingRequestID : spendingR._id})
+    await startup.save()
+
+
+    return res.status(200).json(startup);
+
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
     return res.status(500).json({ msg: "Internal server error" });
   }
 });

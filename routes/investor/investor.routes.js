@@ -3,16 +3,43 @@ const InvestmentModel = require("../../models/Investment.model");
 const InvestorModel = require("../../models/Investor.model");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
 const StartupModel = require("../../models/Startup.model");
+const auth = require("../../middleware/auth");
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const results = await InvestorModel.find({});
+    const results = await InvestorModel.find({}).populate("userDetails");
     return res.status(200).json(results);
   } catch (error) {
     console.log(error);
     return res.status(500).json({ msg: "Internal Server Error" });
+  }
+});
+
+
+const getSpendingRequests = async (id) =>{
+  const sp = await SpendingRequestModel.findOne({startup : id })
+  return sp
+}
+
+router.get("/getspendingrequest", auth, async (req, res) => {
+  try {
+    let investor = await InvestorModel.findOne({ userDetails: req.user.id });
+    const startups = investor.investments;
+    console.log(startups);
+    let spendingRequest = [];
+    let startupIDs = []
+    startups.map( (s) =>  startupIDs.push(s.startupID));
+    startupIDs.map(st=>{
+      const sp = getSpendingRequests(st.startupID)
+      spendingRequest.push(sp)
+    })
+    return res.json(spendingRequest);
+
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ msg: "internal server error" });
   }
 });
 
@@ -24,7 +51,7 @@ router.get("/:investor_id", async (req, res) => {
     if (!investor) {
       return res.status(400).json({ msg: "No investor with given ID" });
     }
-    return res.status(200).json({investor});
+    return res.status(200).json({ investor });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ msg: "Internal Server Error" });
@@ -59,11 +86,13 @@ router.post(
 
       await investment.save();
 
-      startup.investments.unshift(investment._id);
-      await startup.save();
-
-      investor.investments.unshift(startup._id);
-      await investor.save();
+      let exists = investor.investments.find(
+        (i) => i.startupID.toString() === startupID
+      );
+      if (!exists) {
+        investor.investments.unshift({ startupID: startup._id });
+        await investor.save();
+      }
 
       spending_request.amount = spending_request.amount - amount;
       if (spending_request.amount - amount <= 0) {
@@ -83,5 +112,10 @@ router.post(
     }
   }
 );
+
+/*
+63ed23ecc3f9033081e4b077
+63ed23ecc3f9033081e4b079
+*/
 
 module.exports = router;
