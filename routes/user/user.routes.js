@@ -26,7 +26,7 @@ router.get("/profile", auth, async (req, res) => {
     if (!user) {
       return res.status(400).json({ msg: "User Not found" });
     }
-    response.user = user
+    response.user = user;
 
     if (user.role === "INVESTOR") {
       const investorDetails = await InvestorModel.findOne({
@@ -39,7 +39,8 @@ router.get("/profile", auth, async (req, res) => {
           .json({ msg: " investorDetails Does not exists" });
       }
 
-      response.investorDetails = investorDetails;
+      response.userType = "INVESTOR";
+      response.details = investorDetails;
     } else if (user.role === "IDEAPERSON") {
       const ideapersonDetails = await IdeaPersonModel.findOne({
         userDetails: req.user.id,
@@ -51,7 +52,8 @@ router.get("/profile", auth, async (req, res) => {
           .json({ msg: " ideapersonDetails Does not exists" });
       }
 
-      response.ideapersonDetails = ideapersonDetails;
+      response.userType = "IDEAPERSON";
+      response.details = ideapersonDetails;
     } else {
       const vendorDetails = await VendorModel.findOne({
         userDetails: req.user.id,
@@ -59,7 +61,9 @@ router.get("/profile", auth, async (req, res) => {
       if (!vendorDetails) {
         return res.status(400).json({ msg: " vendorDetails Does not exists" });
       }
-      response.vendorDetails = vendorDetails;
+
+      response.userType = "VENDOR";
+      response.details = vendorDetails;
     }
     return res.status(200).json(response);
   } catch (error) {
