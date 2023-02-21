@@ -31,7 +31,6 @@ const StartupSchema = new mongoose.Schema({
     type: String,
     enum: ["EDTECH", "FINTECH", "LIFESTYLE", "SOCIAL", "Finance" , "n/a"],
   },
-
   spendingRequest: [
     {
       spendingRequestID: {
@@ -65,6 +64,18 @@ const StartupSchema = new mongoose.Schema({
   image: {
     type: String,
     default: "",
+  },
+  valuation: {
+    type: String,
+  },
+  ceo: {
+    type: String,
+  },
+  country: {
+    type: String,
+  },
+  headQuarters: {
+    type: String,
   },
 });
 
