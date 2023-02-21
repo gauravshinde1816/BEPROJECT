@@ -11,7 +11,13 @@ const InvestmentModel = new mongoose.Schema(
       required: true,
     },
     vendor: {
-      type: mongoose.Schema.Types.ObjectId
+      type: mongoose.Schema.Types.ObjectId,
+    },
+    vendorAddress: {
+      type: String,
+    },
+    investorAddress: {
+      type: String,
     },
     startup: {
       type: mongoose.Schema.Types.ObjectId,
