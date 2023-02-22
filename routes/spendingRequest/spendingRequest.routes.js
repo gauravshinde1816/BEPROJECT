@@ -14,6 +14,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/me", auth, async (req, res) => {
+  try {
+    const results = await SpendingRequestModel.find({
+      ideaPersonID: req.user.id,
+    });
+    return res.status(200).json(results);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ msg: "Internal server error" });
+  }
+});
+
 router.get("/:spending_requestid", async (req, res) => {
   try {
     const id = req.params["spending_requestid"];
@@ -38,7 +50,7 @@ router.post("/:spending_requestid/upvote", auth, async (req, res) => {
       return res.status(400).json({ msg: "Spending Request not found" });
     }
 
-    let exists = spending_request.votes.find((v) => v.user.toString()  === user);
+    let exists = spending_request.votes.find((v) => v.user.toString() === user);
     if (exists) {
       return res.status(400).json({ msg: "User has already voted" });
     }
@@ -63,7 +75,9 @@ router.put("/:spending_requestid/downvote", auth, async (req, res) => {
       return res.status(400).json({ msg: "Spending Request not found" });
     }
 
-    spending_request.votes = spending_request.votes.filter((v) => v.user.toString()  !== user);
+    spending_request.votes = spending_request.votes.filter(
+      (v) => v.user.toString() !== user
+    );
     await spending_request.save();
 
     return res.status(200).json(spending_request);
@@ -76,7 +90,7 @@ router.put("/:spending_requestid/downvote", auth, async (req, res) => {
 router.post("/:startupid", auth, async (req, res) => {
   try {
     const { title, amount, productDetails } = req.body;
-    const startupID  = req.params["startupid"]
+    const startupID = req.params["startupid"];
 
     const spendingR = new SpendingRequestModel({
       title,
@@ -89,20 +103,17 @@ router.post("/:startupid", auth, async (req, res) => {
 
     await spendingR.save();
 
-    const startup = await StartupModel.findById(startupID)
+    const startup = await StartupModel.findById(startupID);
 
-
-    if(!startup){
-      return res.status(400).json({msg: "Start up does not exists"})
+    if (!startup) {
+      return res.status(400).json({ msg: "Start up does not exists" });
     }
-    console.log(startup)
+    console.log(startup);
 
-    startup.spendingRequest.push({spendingRequestID : spendingR._id})
-    await startup.save()
-
+    startup.spendingRequest.push({ spendingRequestID: spendingR._id });
+    await startup.save();
 
     return res.status(200).json(startup);
-
   } catch (error) {
     console.log(error.message);
     return res.status(500).json({ msg: "Internal server error" });

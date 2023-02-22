@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 router.get("/me", auth, async (req, res) => {
   try {
     const startup = await StartupModel.find({ ideaPerson: req.user.id });
@@ -41,8 +40,6 @@ router.get("/:startupid", async (req, res) => {
     return res.status(500).json({ msg: "Internal server error" });
   }
 });
-
-
 
 router.post("/", auth, async (req, res) => {
   try {
