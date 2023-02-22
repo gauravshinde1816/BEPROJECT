@@ -14,6 +14,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/byStartup/:startupId", async (req, res) => {
+  try {
+    const { startupId } = req.params;
+    const results = await SpendingRequestModel.find({ startup: startupId });
+    return res.status(200).json(results);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ msg: "Internal server error" });
+  }
+});
+
 router.get("/me", auth, async (req, res) => {
   try {
     const results = await SpendingRequestModel.find({

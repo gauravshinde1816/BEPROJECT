@@ -88,65 +88,62 @@ const sendTransaction = async (amount) => {
   web3.eth.sendSignedTransaction(serializedTransaction);
 };
 
-router.post(
-  "/invest/:investor/:startup/:spending_request",
-  async (req, res) => {
-    let investorID = req.params["investor"];
-    let startupID = req.params["startup"];
-    let spending_requestID = req.params["spending_request"];
+router.post("/invest/:startup/:spending_request", async (req, res) => {
+  let investorID = req.user.id;
+  let startupID = req.params["startup"];
+  let spending_requestID = req.params["spending_request"];
 
-    try {
-      const { amount } = req.body;
+  try {
+    const { amount } = req.body;
 
-      let investor = await InvestorModel.findById(investorID);
-      let startup = await StartupModel.findById(startupID);
-      let spending_request = await SpendingRequestModel.findById(
-        spending_requestID
-      );
+    let investor = await InvestorModel.findById(investorID);
+    let startup = await StartupModel.findById(startupID);
+    let spending_request = await SpendingRequestModel.findById(
+      spending_requestID
+    );
 
-      console.log(investor);
-      console.log(startup);
-      console.log(spending_request);
+    console.log(investor);
+    console.log(startup);
+    console.log(spending_request);
 
-      let investment = new InvestmentModel({
-        amount,
-        user: investor._id,
-        startup: startup._id,
-        vendorAddress: "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d",
-        investorAddress: "0x05afd468E415C721D516b103B5EF9748203141Be",
-      });
+    let investment = new InvestmentModel({
+      amount,
+      user: investor._id,
+      startup: startup._id,
+      vendorAddress: "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d",
+      investorAddress: "0x05afd468E415C721D516b103B5EF9748203141Be",
+    });
 
-      await investment.save();
+    await investment.save();
 
-      let exists = investor.investments.find(
-        (i) => i.startupID.toString() === startupID
-      );
-      if (!exists) {
-        investor.investments.unshift({ startupID: startup._id });
-        await investor.save();
-      }
-
-      spending_request.amount = spending_request.amount - amount;
-      if (spending_request.amount - amount <= 0) {
-        spending_request.isOpen = false;
-      }
-      await spending_request.save();
-
-      //
-      sendTransaction(amount);
-
-      return res.json({
-        startup: startup,
-        investment: investment,
-        spending_request: spending_request,
-        investor: investor,
-      });
-    } catch (error) {
-      console.log(error.message);
-      return res.status(500).json({ msg: "internal server error" });
+    let exists = investor.investments.find(
+      (i) => i.startupID.toString() === startupID
+    );
+    if (!exists) {
+      investor.investments.unshift({ startupID: startup._id });
+      await investor.save();
     }
+
+    spending_request.amount = spending_request.amount - amount;
+    if (spending_request.amount - amount <= 0) {
+      spending_request.isOpen = false;
+    }
+    await spending_request.save();
+
+    //
+    sendTransaction(amount);
+
+    return res.json({
+      startup: startup,
+      investment: investment,
+      spending_request: spending_request,
+      investor: investor,
+    });
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ msg: "internal server error" });
   }
-);
+});
 
 /*
 63ed23ecc3f9033081e4b077

@@ -2,12 +2,13 @@ const express = require("express");
 const app = express();
 const connectDB = require("./config/db");
 const path = require("path");
-const cors = require("cors")
+const cors = require("cors");
 const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/user/user.routes");
 const startupRoutes = require("./routes/startup/startup.routes");
 const spendingRequest = require("./routes/spendingRequest/spendingRequest.routes");
-const investorRoutes= require("./routes/investor/investor.routes");
+const investorRoutes = require("./routes/investor/investor.routes");
+const investmentRoutes = require("./routes/investments/investment.routes");
 const { auth } = require("express-openid-connect");
 
 //auth0 config
@@ -21,7 +22,7 @@ const config = {
 };
 
 //middleware
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(auth(config));
@@ -37,6 +38,7 @@ app.use("/users", userRoutes);
 app.use("/startups", startupRoutes);
 app.use("/spendingrequest", spendingRequest);
 app.use("/investors", investorRoutes);
+app.use("/investments", investmentRoutes);
 
 //listen to PORT
 const PORT = 5000 || process.env.PORT;
