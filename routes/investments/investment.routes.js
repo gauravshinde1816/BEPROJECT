@@ -14,20 +14,20 @@ router.get("/", async (req, res) => {
 router.get("/investor", auth, async (req, res) => {
   const userId = req.user.id;
   let results = await InvestorModel.find({ userDetails: userId });
-  results = await Promise.all(
-    results.map(async (investment) => {
-      console.log("investment", investment);
-      const startup = await StartupModel.findById(investment.startup);
-      return {
-        startupName: startup.name,
-        amount: investment.amount,
-        valuation: startup.valuation,
-        logo: startup.image,
-        createdAt: investment.createdAt,
-        sector: startup.category,
-      };
-    })
-  );
+//   results = await Promise.all(
+//     results.map(async (investment) => {
+//       console.log("investment", investment);
+//       const startup = await StartupModel.findById(investment.startup);
+//       return {
+//         startupName: startup.name,
+//         amount: investment.amount,
+//         valuation: startup.valuation,
+//         logo: startup.image,
+//         createdAt: investment.createdAt,
+//         sector: startup.category,
+//       };
+//     })
+//   );
   console.log(results);
   return res.json(results);
 });
