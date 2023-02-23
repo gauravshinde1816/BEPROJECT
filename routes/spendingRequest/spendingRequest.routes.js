@@ -4,6 +4,8 @@ const auth = require("../../middleware/auth");
 const StartupModel = require("../../models/Startup.model");
 const UserModel = require("../../models/User.model");
 const IdeaPersonModel = require("../../models/IdeaPerson.model");
+const InvestmentModel = require("../../models/Investment.model");
+const VendorModel = require("../../models/Vendor.model");
 
 const router = express.Router();
 router.get("/", async (req, res) => {
@@ -14,6 +16,49 @@ router.get("/", async (req, res) => {
     console.log(error);
     return res.status(500).json({ msg: "Internal server error" });
   }
+});
+
+router.get("/byInvestor", auth, async (req, res) => {
+  const userId = req.user.id;
+  let investments = await InvestmentModel.find({ user: userId });
+
+  const startupIdsObject = {};
+
+  investments.forEach((investment) => {
+    startupIdsObject[investment.startup] = 0;
+  });
+
+  const startupIds = Object.keys(startupIdsObject);
+
+  let srs = [];
+
+  await Promise.all(
+    startupIds.map(async (startupId) => {
+      const sr = await SpendingRequestModel.find({ startup: startupId });
+      sr.forEach((ele) => {
+        srs.push(ele);
+      });
+    })
+  );
+
+  const results = await Promise.all(
+    srs.map(async (ele, id) => {
+      const cm = await UserModel.findById(ele.ideaPersonID);
+      const vendor = await VendorModel.findById(ele.vendorID);
+      const startup = await StartupModel.findById(ele.startup);
+      return {
+        srNo: id + 1,
+        startupName: startup.name,
+        cmName: cm?.name,
+        vName: vendor?.name,
+        amount: ele?.amount,
+        approvals: ele?.votes?.length,
+        createdAt: ele.createdAt,
+      };
+    })
+  );
+
+  return res.send(results);
 });
 
 router.get("/byStartup/:startupId", async (req, res) => {
@@ -48,8 +93,6 @@ router.get("/me", auth, async (req, res) => {
         };
       })
     );
-
-    console.log(results);
 
     return res.status(200).json(results);
   } catch (error) {
@@ -140,7 +183,6 @@ router.post("/:startupid", auth, async (req, res) => {
     if (!startup) {
       return res.status(400).json({ msg: "Start up does not exists" });
     }
-    console.log(startup);
 
     startup.spendingRequest.push({ spendingRequestID: spendingR._id });
     await startup.save();

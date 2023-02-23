@@ -30,7 +30,6 @@ router.get("/getspendingrequest", auth, async (req, res) => {
   try {
     let investor = await InvestorModel.findOne({ userDetails: req.user.id });
     const startups = investor.investments;
-    console.log(startups);
     let spendingRequest = [];
     let startupIDs = [];
     startups.map((s) => startupIDs.push(s.startupID));
@@ -104,10 +103,6 @@ router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
       spending_requestID
     );
 
-    console.log(investor);
-    console.log(startup);
-    console.log(spending_request);
-
     let investment = new InvestmentModel({
       amount,
       user: user._id,
@@ -116,8 +111,6 @@ router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
       vendorAddress: "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d",
       investorAddress: "0x05afd468E415C721D516b103B5EF9748203141Be",
     });
-
-    console.log("investments: ", investment)
 
     await investment.save();
 
