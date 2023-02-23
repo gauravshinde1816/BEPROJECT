@@ -2,6 +2,8 @@ const express = require("express");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
 const auth = require("../../middleware/auth");
 const StartupModel = require("../../models/Startup.model");
+const UserModel = require("../../models/User.model");
+const IdeaPersonModel = require("../../models/IdeaPerson.model");
 
 const router = express.Router();
 router.get("/", async (req, res) => {
@@ -27,9 +29,28 @@ router.get("/byStartup/:startupId", async (req, res) => {
 
 router.get("/me", auth, async (req, res) => {
   try {
-    const results = await SpendingRequestModel.find({
+    let results = await SpendingRequestModel.find({
       ideaPersonID: req.user.id,
     });
+
+    results = await Promise.all(
+      results.map(async (ele) => {
+        const startup = await StartupModel.findById(ele.startup);
+        const user = await UserModel.findById(ele.ideaPersonID);
+        return {
+          sr: ele,
+          title: ele.title,
+          productDetails: ele.productDetails,
+          amount: ele.amount,
+          createdAt: ele.createdAt,
+          name: startup.name,
+          cmname: user.name,
+        };
+      })
+    );
+
+    console.log(results);
+
     return res.status(200).json(results);
   } catch (error) {
     console.log(error);

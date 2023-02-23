@@ -6,6 +6,10 @@ const InvestmentModel = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       required: true,
     },
+    investorId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+    },
     amount: {
       type: Number,
       required: true,

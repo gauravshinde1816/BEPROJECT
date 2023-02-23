@@ -7,6 +7,7 @@ const InvestorModel = require("../../models/Investor.model");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
 const StartupModel = require("../../models/Startup.model");
 const auth = require("../../middleware/auth");
+const UserModel = require("../../models/User.model");
 
 const router = express.Router();
 
@@ -88,7 +89,7 @@ const sendTransaction = async (amount) => {
   web3.eth.sendSignedTransaction(serializedTransaction);
 };
 
-router.post("/invest/:startup/:spending_request", async (req, res) => {
+router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
   let investorID = req.user.id;
   let startupID = req.params["startup"];
   let spending_requestID = req.params["spending_request"];
@@ -96,7 +97,8 @@ router.post("/invest/:startup/:spending_request", async (req, res) => {
   try {
     const { amount } = req.body;
 
-    let investor = await InvestorModel.findById(investorID);
+    let user = await UserModel.findById(investorID);
+    let investor = await InvestorModel.findOne({ userDetails: user._id });
     let startup = await StartupModel.findById(startupID);
     let spending_request = await SpendingRequestModel.findById(
       spending_requestID
@@ -108,11 +110,14 @@ router.post("/invest/:startup/:spending_request", async (req, res) => {
 
     let investment = new InvestmentModel({
       amount,
-      user: investor._id,
+      user: user._id,
       startup: startup._id,
+      investorId: investor._id,
       vendorAddress: "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d",
       investorAddress: "0x05afd468E415C721D516b103B5EF9748203141Be",
     });
+
+    console.log("investments: ", investment)
 
     await investment.save();
 
@@ -131,7 +136,7 @@ router.post("/invest/:startup/:spending_request", async (req, res) => {
     await spending_request.save();
 
     //
-    sendTransaction(amount);
+    // sendTransaction(amount);
 
     return res.json({
       startup: startup,
