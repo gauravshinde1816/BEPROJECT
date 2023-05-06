@@ -16,6 +16,9 @@ const SpendingRequest = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "idea_person",
     },
+    vendorWalletAddress: {
+      type: String,
+    },
     vendorID: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "vendor",
@@ -27,6 +30,7 @@ const SpendingRequest = new mongoose.Schema(
 
     totalAmountRaised: {
       type: Number,
+      default: 0,
     },
 
     productDetails: {

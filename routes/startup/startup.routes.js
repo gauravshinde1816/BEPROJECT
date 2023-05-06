@@ -14,10 +14,12 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 router.get("/me", auth, async (req, res) => {
   try {
     const startup = await StartupModel.find({ ideaPerson: req.user.id });
+
+    console.log(req.user.id);
+
     if (startup.length === 0) {
       return res.status(400).json({ msg: "No startup with Logged In User" });
     }
@@ -42,14 +44,13 @@ router.get("/:startupid", async (req, res) => {
   }
 });
 
-
-
 router.post("/", auth, async (req, res) => {
   try {
     const {
       name,
       category,
       description,
+      ideaPersonWalletAddress,
       image,
       companySize,
       foundedIn,
@@ -66,6 +67,7 @@ router.post("/", auth, async (req, res) => {
       description,
       image,
       companySize,
+      ideaPersonWalletAddress,
       foundedIn,
       valuation,
       ceo,
@@ -74,6 +76,9 @@ router.post("/", auth, async (req, res) => {
     });
 
     await startup.save();
+
+    console.log(startup);
+
     return res.status(200).json(startup);
   } catch (error) {
     console.log(error);

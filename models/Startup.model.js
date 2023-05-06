@@ -24,6 +24,9 @@ const StartupSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
+  ideaPersonWalletAddress :{
+    type: String,
+  },
   gender: {
     type: String,
   },

@@ -7,6 +7,7 @@ const InvestorModel = require("../../models/Investor.model");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
 const StartupModel = require("../../models/Startup.model");
 const auth = require("../../middleware/auth");
+const UserModel = require("../../models/User.model");
 
 const router = express.Router();
 
@@ -29,7 +30,6 @@ router.get("/getspendingrequest", auth, async (req, res) => {
   try {
     let investor = await InvestorModel.findOne({ userDetails: req.user.id });
     const startups = investor.investments;
-    console.log(startups);
     let spendingRequest = [];
     let startupIDs = [];
     startups.map((s) => startupIDs.push(s.startupID));
@@ -86,72 +86,64 @@ const sendTransaction = async (amount) => {
   var serializedTransaction = transaction.serialize();
   web3.eth.sendSignedTransaction(serializedTransaction);
 
-
-  console.log("After Tx")
+  console.log("After Tx");
 
   web3.eth.getBalance(sendingAddress).then(console.log);
   web3.eth.getBalance(receivingAddress).then(console.log);
 };
 
-router.post(
-  "/invest/:investor/:startup/:spending_request",
-  async (req, res) => {
-    let investorID = req.params["investor"];
-    let startupID = req.params["startup"];
-    let spending_requestID = req.params["spending_request"];
+router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
+  let investorID = req.user.id;
+  let startupID = req.params["startup"];
+  let spending_requestID = req.params["spending_request"];
 
-    try {
-      const { amount } = req.body;
+  try {
+    const { amount } = req.body;
 
-      let investor = await InvestorModel.findById(investorID);
-      let startup = await StartupModel.findById(startupID);
-      let spending_request = await SpendingRequestModel.findById(
-        spending_requestID
-      );
+    let user = await UserModel.findById(investorID);
+    let investor = await InvestorModel.findOne({ userDetails: user._id });
+    let startup = await StartupModel.findById(startupID);
+    let spending_request = await SpendingRequestModel.findById(
+      spending_requestID
+    );
 
-      console.log(investor);
-      console.log(startup);
-      console.log(spending_request);
+    console.log(user?._id,  startup?._id, spending_request?._id);
+    // let investment = new InvestmentModel({
+    //   amount,
+    //   user: investor._id,
+    //   startup: startup._id,
+    //   vendorAddress: "0xfe767676C7FF81e3DE2bFAeda06B08d5D8c99cf2",
+    //   investorAddress: "0x7C23A3a58177e1De920c08576A53e389b91cef8A",
+    // });
+    // await investment.save();
 
-      let investment = new InvestmentModel({
-        amount,
-        user: investor._id,
-        startup: startup._id,
-        vendorAddress: "0xfe767676C7FF81e3DE2bFAeda06B08d5D8c99cf2",
-        investorAddress: "0x7C23A3a58177e1De920c08576A53e389b91cef8A",
-      });
+    // let exists = investor.investments.find(
+    //   (i) => i.startupID.toString() === startupID
+    // );
+    // if (!exists) {
+    //   investor.investments.unshift({ startupID: startup._id });
+    //   await investor.save();
+    // }
 
-      await investment.save();
-
-      let exists = investor.investments.find(
-        (i) => i.startupID.toString() === startupID
-      );
-      if (!exists) {
-        investor.investments.unshift({ startupID: startup._id });
-        await investor.save();
-      }
-
-      spending_request.amount = spending_request.amount - amount;
-      if (spending_request.amount - amount <= 0) {
-        spending_request.isOpen = false;
-      }
-      await spending_request.save();
-
-      //
-      sendTransaction(amount);
-
-      return res.json({
-        startup: startup,
-        investment: investment,
-        spending_request: spending_request,
-        investor: investor,
-      });
-    } catch (error) {
-      console.log(error.message);
-      return res.status(500).json({ msg: "internal server error" });
+    spending_request.totalAmountRaised = spending_request.totalAmountRaised  + amount;
+    if (spending_request.amount - spending_request.totalAmountRaised <= 0) {
+      spending_request.isOpen = false;
     }
+    await spending_request.save();
+
+    //
+    // sendTransaction(amount);
+
+    return res.json({
+      startup: startup,
+      spending_request: spending_request,
+      
+    });
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ msg: "internal server error" });
   }
-);
+});
 
 /*
 63ed23ecc3f9033081e4b077
