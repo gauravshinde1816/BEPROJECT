@@ -1,4 +1,5 @@
 {
   "MONGO_URI": "mongodb+srv://gaurav:gaurav123@cluster0.ffhnw.mongodb.net/beproject?retryWrites=true&w=majority",
-  "SECRET" :"nksacnkcnkank"
+  "SECRET" :"nksacnkcnkank",
+  "MONGO_LOCAL" : "mongodb://localhost:27017/BEPROJECT_LOCAL"
 }

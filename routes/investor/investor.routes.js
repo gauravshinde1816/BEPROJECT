@@ -60,11 +60,10 @@ router.get("/:investor_id", async (req, res) => {
 });
 
 const sendTransaction = async (amount) => {
-  var sendingAddress = "0x05afd468E415C721D516b103B5EF9748203141Be";
-  var receivingAddress = "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d";
+  var sendingAddress = "0xfe767676C7FF81e3DE2bFAeda06B08d5D8c99cf2";
+  var receivingAddress = "0x7C23A3a58177e1De920c08576A53e389b91cef8A";
 
   web3.eth.getBalance(sendingAddress).then(console.log);
-
   web3.eth.getBalance(receivingAddress).then(console.log);
 
   const nonce = await web3.eth.getTransactionCount(sendingAddress);
@@ -79,13 +78,19 @@ const sendTransaction = async (amount) => {
   };
 
   var privateKeySender =
-    "64eaf1efa7dfc4b3f6a1f69a480e9785d90076cd8522373fcd4a57eb4c6a6cfd";
+    "73f566c529bc4558b6f89a5a67958482c97eae7759a39dbf20d9399a81c8f250";
   var privateKeySenderHex = new Buffer.alloc(32, privateKeySender, "hex");
   var transaction = new EthereumTransaction(rawTransaction);
   transaction.sign(privateKeySenderHex);
 
   var serializedTransaction = transaction.serialize();
   web3.eth.sendSignedTransaction(serializedTransaction);
+
+
+  console.log("After Tx")
+
+  web3.eth.getBalance(sendingAddress).then(console.log);
+  web3.eth.getBalance(receivingAddress).then(console.log);
 };
 
 router.post(
@@ -112,8 +117,8 @@ router.post(
         amount,
         user: investor._id,
         startup: startup._id,
-        vendorAddress: "0x7cF8b8901e5fE65B0dcDdC49c4c6663DDd578e6d",
-        investorAddress: "0x05afd468E415C721D516b103B5EF9748203141Be",
+        vendorAddress: "0xfe767676C7FF81e3DE2bFAeda06B08d5D8c99cf2",
+        investorAddress: "0x7C23A3a58177e1De920c08576A53e389b91cef8A",
       });
 
       await investment.save();
