@@ -1,5 +1,6 @@
 const express = require("express");
 const SpendingRequestModel = require("../../models/SpendingRequest.model");
+const InvestorModel = require("../../models/Investor.model");
 const auth = require("../../middleware/auth");
 const StartupModel = require("../../models/Startup.model");
 const UserModel = require("../../models/User.model");
@@ -20,7 +21,10 @@ router.get("/", async (req, res) => {
 
 router.get("/byInvestor", auth, async (req, res) => {
   const userId = req.user.id;
-  let investments = await InvestmentModel.find({ user: userId });
+  let investor = await InvestorModel.findOne({ userDetails: userId });
+  let investments = await InvestmentModel.find({ investorId: investor._id });
+
+  console.log("Investment : ", investments);
 
   const startupIdsObject = {};
 
@@ -30,6 +34,7 @@ router.get("/byInvestor", auth, async (req, res) => {
 
   const startupIds = Object.keys(startupIdsObject);
 
+  console.log("ST ids : ", startupIds);
   let srs = [];
 
   await Promise.all(
@@ -41,23 +46,21 @@ router.get("/byInvestor", auth, async (req, res) => {
     })
   );
 
-  const results = await Promise.all(
-    srs.map(async (ele, id) => {
-      const cm = await UserModel.findById(ele.ideaPersonID);
-      const vendor = await VendorModel.findById(ele.vendorID);
-      const startup = await StartupModel.findById(ele.startup);
+  const results =  srs.map((ele, id) => {
+     
       return {
         srNo: id + 1,
-        startupName: startup.name,
-        cmName: cm?.name,
-        vName: vendor?.name,
-        amount: ele?.amount,
+        title : ele.title,
+        amount : ele.amount,
+        productDetails : ele?.productDetails,
+        totalAmountRaised: ele?.totalAmountRaised,
         approvals: ele?.votes?.length,
-        createdAt: ele.createdAt,
+        createdAt: ele?.createdAt,
       };
     })
-  );
 
+
+  console.log("results: ", results);
   return res.send(results);
 });
 
@@ -78,14 +81,14 @@ router.get("/me", auth, async (req, res) => {
       ideaPersonID: req.user.id,
     });
 
-    console.log(results)
+    console.log(results);
 
     results = await Promise.all(
       results.map(async (ele) => {
         const startup = await StartupModel.findById(ele.startup);
         const user = await UserModel.findById(ele.ideaPersonID);
-        console.log(startup)
-        
+        console.log(startup);
+
         return {
           sr: ele,
           title: ele.title,
