@@ -24,7 +24,9 @@ router.get("/byInvestor", auth, async (req, res) => {
   let investor = await InvestorModel.findOne({ userDetails: userId });
   let investments = await InvestmentModel.find({ investorId: investor._id });
 
-  console.log("Investment : ", investments);
+
+  // const invest = await InvestorModel.find({ startup: "6456024602cc6e4bd09876ac" });
+  // console.log("Investment : ", invest);
 
   const startupIdsObject = {};
 
@@ -46,19 +48,33 @@ router.get("/byInvestor", auth, async (req, res) => {
     })
   );
 
-  const results =  srs.map((ele, id) => {
-     
-      return {
-        srNo: id + 1,
-        title : ele.title,
-        amount : ele.amount,
-        productDetails : ele?.productDetails,
-        totalAmountRaised: ele?.totalAmountRaised,
-        approvals: ele?.votes?.length,
-        createdAt: ele?.createdAt,
-      };
+  await Promise.all(
+    startupIds.map(async (startupId) => {
+      const invest = await InvestorModel.find({ startup: startupId });
+      console.log(startupId ,  " " , invest)
+      srs.forEach((ele) => {
+        ele["minCount"] = invest.length;
+      });
     })
+  );
 
+  const results = srs.map((ele, id) => {
+    return {
+      srNo: id + 1,
+      user: userId,
+      _id: ele._id,
+      title: ele.title,
+      amount: ele.amount,
+      productDetails: ele?.productDetails,
+      totalAmountRaised: ele?.totalAmountRaised,
+      approvals: ele?.votes?.length,
+      isApproved: ele?.isApproved,
+      status: ele?.votes?.length >  ele?.minCount  ? true : false,
+      minCount : ele?.minCount,
+      createdAt: ele?.createdAt,
+      votes: ele?.votes,
+    };
+  });
 
   console.log("results: ", results);
   return res.send(results);

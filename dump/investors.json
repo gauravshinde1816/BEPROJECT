@@ -1,0 +1,257 @@
+[{
+  "_id": {
+    "$oid": "63e889fc503dc825c85b83a4"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63e889fc503dc825c85b83a3"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676184060370"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676184060370"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f394f3ad40d7512f031e10"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f394f3ad40d7512f031e0f"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676907763951"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676907763951"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f39517947bd251aa0701b4"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f39517947bd251aa0701b3"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676907799154"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676907799154"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3953d947bd251aa0701b8"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3953d947bd251aa0701b7"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676907837669"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676907837669"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f39e4e2c40b543fcee7c63"
+  },
+  "investments": [
+    {
+      "_id": {
+        "$oid": "63f4508fa08f6d2a440ea602"
+      },
+      "startupID": {
+        "$oid": "63ed23ecc3f9033081e4b079"
+      }
+    }
+  ],
+  "userDetails": {
+    "$oid": "63f39e4e2c40b543fcee7c61"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676910158686"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676955791010"
+    }
+  },
+  "__v": 8
+},{
+  "_id": {
+    "$oid": "63f3c2fb9f93107245873896"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3c2fb9f93107245873894"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676919547342"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676919547342"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d74cd5f7598298dd7e65"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3d74cd5f7598298dd7e63"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924748431"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924748431"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d9f03f45f72c5cf36c2f"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3d9f03f45f72c5cf36c2d"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925424839"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925424839"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3da143f45f72c5cf36c34"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3da143f45f72c5cf36c32"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925460961"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925460961"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3da41b04c0c1ba097911b"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3da41b04c0c1ba0979119"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925505495"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925505495"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3daf8c41ff82f54c51e17"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f3daf8c41ff82f54c51e15"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925688498"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925688498"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4996c32635bc49c1ddaf4"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f4996c32635bc49c1ddaf2"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676974444997"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676974444997"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aa7bfb68d3b2d190e4a7"
+  },
+  "investments": [],
+  "userDetails": {
+    "$oid": "63f4aa7bfb68d3b2d190e4a5"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676978811394"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676978811394"
+    }
+  },
+  "__v": 0
+}]

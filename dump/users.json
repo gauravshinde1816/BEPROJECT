@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "63f4996c32635bc49c1ddaf2"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$/3ZQPrwbbb2B/3mCNwSw1.AoQw2Fd6bWwvAJgDFs2.tv./eNbHQXW",
+  "role": "INVESTOR",
+  "email": "iamalbert@gmai.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$bzgkTcEaTHvdu/xAI52VT.74Jl6b75FdTpfmsNAc0In1DleH/8KxG",
+  "role": "IDEAPERSON",
+  "email": "ideaperson@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aa6cfb68d3b2d190e49a"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$B3ps/1ggf6zZXh8y/v9RYuGIpMb4J0p4.vwzEr3AFD0I7L6kHAZb6",
+  "role": "IDEAPERSON",
+  "email": "iamalbert@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aa7bfb68d3b2d190e4a5"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$D3DbMAMTg9VXfiTuY2vzuuH6DmZCYaRCMqpsVkmcRh4JhhyhxW2vq",
+  "role": "INVESTOR",
+  "email": "iamalbert@gmails.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aaa9fb68d3b2d190e4af"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$9by29FE12JmaMqFE0rtqWOB8qJ5MSdjPh2JdoSNshJMVL9Gor.RFO",
+  "role": "IDEAPERSON",
+  "email": "iamalbert@gmailsa.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aab5fb68d3b2d190e4bc"
+  },
+  "name": "Albert Einstein",
+  "password": "$2a$10$8iJ5mvPF66MbYzcRx6o2YuUTQt0WEnmrAFiwSeczjF/jXpAAsHUQO",
+  "role": "VENDOR",
+  "email": "iamalbert@gmai.coms",
+  "__v": 0
+}]

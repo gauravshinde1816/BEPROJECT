@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "63e5e697b46f052b84a58476"
+  },
+  "userDetails": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3cda5dcadb429c8007157"
+  },
+  "userDetails": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f495fc9994d3be6cf57ad4"
+  },
+  "userDetails": {
+    "$oid": "63f495fb9994d3be6cf57ad2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4a21932635bc49c1ddb34"
+  },
+  "userDetails": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aa6cfb68d3b2d190e49c"
+  },
+  "userDetails": {
+    "$oid": "63f4aa6cfb68d3b2d190e49a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4aaaafb68d3b2d190e4b1"
+  },
+  "userDetails": {
+    "$oid": "63f4aaa9fb68d3b2d190e4af"
+  },
+  "__v": 0
+}]

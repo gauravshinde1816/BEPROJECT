@@ -1,0 +1,1786 @@
+[{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "name": "Voolia",
+  "ideaPerson": "Dion",
+  "category": "Finance",
+  "description": "Contact Radiation of Pleura",
+  "gender": "Female",
+  "companySize": "5338",
+  "foundedIn": "2004",
+  "image": "http://dummyimage.com/189x100.png/cc0000/ffffff",
+  "valuation": "786",
+  "ceo": "Dion Dahmke",
+  "country": "Brazil",
+  "headQuarters": "Salto",
+  "__v": 4,
+  "spendingRequest": [
+    {
+      "_id": {
+        "$oid": "63f204c3acd9dd19fce272aa"
+      },
+      "spendingRequestID": {
+        "$oid": "63f204c3acd9dd19fce272a7"
+      }
+    },
+    {
+      "$oid": "63f204536575d34f8cf02995"
+    },
+    {
+      "_id": {
+        "$oid": "63f3d812de44e921703ce13f"
+      },
+      "spendingRequestID": {
+        "$oid": "63f3d811de44e921703ce13c"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "63f3d8adde44e921703ce144"
+      },
+      "spendingRequestID": {
+        "$oid": "63f3d8acde44e921703ce141"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "name": "Youopia",
+  "ideaPerson": "Ilyssa",
+  "category": "n/a",
+  "description": "Occlusion of Right Radial Artery with Intraluminal Device, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "911",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/112x100.png/dddddd/000000",
+  "valuation": "959",
+  "ceo": "Ilyssa Twinborne",
+  "country": "Finland",
+  "headQuarters": "Kokemäki",
+  "__v": 3,
+  "spendingRequest": [
+    {
+      "_id": {
+        "$oid": "63f2050916585d5b743755f7"
+      },
+      "spendingRequestID": {
+        "$oid": "63f2050716585d5b743755f3"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "63f3d93bc41ff82f54c51e0d"
+      },
+      "spendingRequestID": {
+        "$oid": "63f3d93bc41ff82f54c51e0a"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "63f3d972c41ff82f54c51e12"
+      },
+      "spendingRequestID": {
+        "$oid": "63f3d972c41ff82f54c51e0f"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07b"
+  },
+  "name": "Devpoint",
+  "ideaPerson": "Thayne",
+  "category": "Capital Goods",
+  "description": "Repair Right Index Finger, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "8051",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/242x100.png/ff4444/ffffff",
+  "valuation": "127",
+  "ceo": "Thayne Mallord",
+  "country": "Indonesia",
+  "headQuarters": "Jungkat Selatan"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07d"
+  },
+  "name": "Npath",
+  "ideaPerson": "Bealle",
+  "category": "Consumer Services",
+  "description": "Resection of Left Kidney Pelvis, Via Natural or Artificial Opening",
+  "gender": "Male",
+  "companySize": "1008",
+  "foundedIn": "2011",
+  "image": "http://dummyimage.com/172x100.png/ff4444/ffffff",
+  "valuation": "848",
+  "ceo": "Bealle McGeouch",
+  "country": "Nicaragua",
+  "headQuarters": "Larreynaga"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07e"
+  },
+  "name": "Kazu",
+  "ideaPerson": "Benjamin",
+  "category": "Consumer Services",
+  "description": "Alteration of Left Lower Leg with Autologous Tissue Substitute, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "6675",
+  "foundedIn": "1994",
+  "image": "http://dummyimage.com/236x100.png/5fa2dd/ffffff",
+  "valuation": "56",
+  "ceo": "Benjamin Brownsworth",
+  "country": "Russia",
+  "headQuarters": "Izmaylovo"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07f"
+  },
+  "name": "Mita",
+  "ideaPerson": "Kirsteni",
+  "category": "Finance",
+  "description": "Extirpation of Matter from Right Carpal Joint, Open Approach",
+  "gender": "Female",
+  "companySize": "8018",
+  "foundedIn": "1963",
+  "image": "http://dummyimage.com/186x100.png/ff4444/ffffff",
+  "valuation": "697",
+  "ceo": "Kirsteni Robroe",
+  "country": "Mongolia",
+  "headQuarters": "Nuga"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b083"
+  },
+  "name": "Gabvine",
+  "ideaPerson": "Ingeberg",
+  "category": "Consumer Services",
+  "description": "Dilation of Right Vertebral Artery, Bifurcation, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "6664",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/176x100.png/dddddd/000000",
+  "valuation": "88",
+  "ceo": "Ingeberg Seligson",
+  "country": "U.S. Virgin Islands",
+  "headQuarters": "Charlotte Amalie"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b089"
+  },
+  "name": "Yabox",
+  "ideaPerson": "Reggy",
+  "category": "Consumer Non-Durables",
+  "description": "Removal of Drainage Device from Stomach, External Approach",
+  "gender": "Male",
+  "companySize": "6693",
+  "foundedIn": "1988",
+  "image": "http://dummyimage.com/227x100.png/dddddd/000000",
+  "valuation": "912",
+  "ceo": "Reggy Vallentin",
+  "country": "France",
+  "headQuarters": "Tournan-en-Brie"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08a"
+  },
+  "name": "JumpXS",
+  "ideaPerson": "Marcie",
+  "category": "Consumer Durables",
+  "description": "Insertion of Endobronchial Valve into Lingula Bronchus, Via Natural or Artificial Opening Endoscopic",
+  "gender": "Female",
+  "companySize": "483",
+  "foundedIn": "1986",
+  "image": "http://dummyimage.com/166x100.png/cc0000/ffffff",
+  "valuation": "68",
+  "ceo": "Marcie Regler",
+  "country": "Tajikistan",
+  "headQuarters": "Boshchorbogh"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08c"
+  },
+  "name": "Skalith",
+  "ideaPerson": "Tony",
+  "category": "Health Care",
+  "description": "Irrigation of Pleural Cavity using Irrigating Substance, Percutaneous Approach, Diagnostic",
+  "gender": "Male",
+  "companySize": "7657",
+  "foundedIn": "1992",
+  "image": "http://dummyimage.com/221x100.png/cc0000/ffffff",
+  "valuation": "294",
+  "ceo": "Tony Frunks",
+  "country": "Argentina",
+  "headQuarters": "Concepción del Bermejo"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b091"
+  },
+  "name": "Oozz",
+  "ideaPerson": "Odella",
+  "category": "Energy",
+  "description": "Transfer Olfactory Nerve to Vagus Nerve, Open Approach",
+  "gender": "Female",
+  "companySize": "7388",
+  "foundedIn": "1989",
+  "image": "http://dummyimage.com/164x100.png/dddddd/000000",
+  "valuation": "57",
+  "ceo": "Odella Isabell",
+  "country": "Albania",
+  "headQuarters": "Gurra e Vogël"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b093"
+  },
+  "name": "Jabbersphere",
+  "ideaPerson": "Giovanni",
+  "category": "Health Care",
+  "description": "Reposition Nasal Turbinate, Via Natural or Artificial Opening",
+  "gender": "Male",
+  "companySize": "7372",
+  "foundedIn": "2002",
+  "image": "http://dummyimage.com/153x100.png/dddddd/000000",
+  "valuation": "350",
+  "ceo": "Giovanni Coppard",
+  "country": "Russia",
+  "headQuarters": "Krasnyy Yar"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09b"
+  },
+  "name": "Mycat",
+  "ideaPerson": "Sindee",
+  "category": "Health Care",
+  "description": "Extirpation of Matter from Head Muscle, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "9006",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/224x100.png/5fa2dd/ffffff",
+  "valuation": "51",
+  "ceo": "Sindee Rennard",
+  "country": "Indonesia",
+  "headQuarters": "Soa"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a1"
+  },
+  "name": "Skipfire",
+  "ideaPerson": "Evaleen",
+  "category": "n/a",
+  "description": "Dilation of Middle Esophagus with Intraluminal Device, Open Approach",
+  "gender": "Bigender",
+  "companySize": "4011",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/101x100.png/ff4444/ffffff",
+  "valuation": "227",
+  "ceo": "Evaleen Sailor",
+  "country": "Finland",
+  "headQuarters": "Tuusula"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a7"
+  },
+  "name": "Youtags",
+  "ideaPerson": "Gearalt",
+  "category": "Technology",
+  "description": "Reattachment of Right Trunk Tendon, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "9941",
+  "foundedIn": "1987",
+  "image": "http://dummyimage.com/105x100.png/dddddd/000000",
+  "valuation": "296",
+  "ceo": "Gearalt Gravey",
+  "country": "Indonesia",
+  "headQuarters": "Sukaharja"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ab"
+  },
+  "name": "Zoonoodle",
+  "ideaPerson": "Sanderson",
+  "category": "Energy",
+  "description": "Restriction of Right Brachial Artery with Intraluminal Device, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "5756",
+  "foundedIn": "2004",
+  "image": "http://dummyimage.com/243x100.png/ff4444/ffffff",
+  "valuation": "398",
+  "ceo": "Sanderson Hurd",
+  "country": "Indonesia",
+  "headQuarters": "Mombok"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ae"
+  },
+  "name": "Quinu",
+  "ideaPerson": "Gussie",
+  "category": "Health Care",
+  "description": "Resection of Left Kidney, Open Approach",
+  "gender": "Female",
+  "companySize": "8228",
+  "foundedIn": "2004",
+  "image": "http://dummyimage.com/135x100.png/ff4444/ffffff",
+  "valuation": "459",
+  "ceo": "Gussie Vigers",
+  "country": "China",
+  "headQuarters": "Dadianzi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b5"
+  },
+  "name": "Meejo",
+  "ideaPerson": "Alonso",
+  "category": "n/a",
+  "description": "Drainage of Right Lower Extremity, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "3332",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/138x100.png/cc0000/ffffff",
+  "valuation": "722",
+  "ceo": "Alonso Mabson",
+  "country": "Thailand",
+  "headQuarters": "Si Racha"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ba"
+  },
+  "name": "Twitterlist",
+  "ideaPerson": "Andre",
+  "category": "n/a",
+  "description": "Compression of Left Foot using Intermittent Pressure Device",
+  "gender": "Male",
+  "companySize": "2113",
+  "foundedIn": "1999",
+  "image": "http://dummyimage.com/118x100.png/ff4444/ffffff",
+  "valuation": "308",
+  "ceo": "Andre Venediktov",
+  "country": "Madagascar",
+  "headQuarters": "Amboasary"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0bb"
+  },
+  "name": "BlogXS",
+  "ideaPerson": "Thedrick",
+  "category": "Basic Industries",
+  "description": "Occlusion of Left Hand Artery with Extraluminal Device, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "5486",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/244x100.png/cc0000/ffffff",
+  "valuation": "664",
+  "ceo": "Thedrick Smallpiece",
+  "country": "Portugal",
+  "headQuarters": "Arcossó"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0bc"
+  },
+  "name": "Vimbo",
+  "ideaPerson": "Kettie",
+  "category": "Energy",
+  "description": "Revision of Nonautologous Tissue Substitute in Thoracic Duct, External Approach",
+  "gender": "Female",
+  "companySize": "9907",
+  "foundedIn": "2005",
+  "image": "http://dummyimage.com/182x100.png/cc0000/ffffff",
+  "valuation": "579",
+  "ceo": "Kettie Yurinov",
+  "country": "China",
+  "headQuarters": "Qiaoxi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0be"
+  },
+  "name": "Oyoba",
+  "ideaPerson": "Nikos",
+  "category": "Consumer Services",
+  "description": "Bypass Cystic Duct to Duodenum with Intraluminal Device, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "2747",
+  "foundedIn": "2006",
+  "image": "http://dummyimage.com/153x100.png/ff4444/ffffff",
+  "valuation": "888",
+  "ceo": "Nikos Halpen",
+  "country": "Malta",
+  "headQuarters": "Marsaxlokk"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0bf"
+  },
+  "name": "Meembee",
+  "ideaPerson": "Shel",
+  "category": "Energy",
+  "description": "Drainage of Intracranial Artery, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "1051",
+  "foundedIn": "1998",
+  "image": "http://dummyimage.com/148x100.png/dddddd/000000",
+  "valuation": "991",
+  "ceo": "Shel MacWhan",
+  "country": "Indonesia",
+  "headQuarters": "Resapombo"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c8"
+  },
+  "name": "Twitterbeat",
+  "ideaPerson": "Adlai",
+  "category": "Health Care",
+  "description": "Supplement Right Rib with Synthetic Substitute, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "8745",
+  "foundedIn": "1991",
+  "image": "http://dummyimage.com/204x100.png/ff4444/ffffff",
+  "valuation": "655",
+  "ceo": "Adlai Aitcheson",
+  "country": "Portugal",
+  "headQuarters": "Almalaguês"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c9"
+  },
+  "name": "Vinte",
+  "ideaPerson": "Laird",
+  "category": "Basic Industries",
+  "description": "Fusion of 2 to 7 Thoracic Vertebral Joints with Synthetic Substitute, Posterior Approach, Anterior Column, Percutaneous Endoscopic Approach",
+  "gender": "Polygender",
+  "companySize": "268",
+  "foundedIn": "1989",
+  "image": "http://dummyimage.com/212x100.png/dddddd/000000",
+  "valuation": "816",
+  "ceo": "Laird Dabrowski",
+  "country": "Russia",
+  "headQuarters": "Gur’yevsk"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ca"
+  },
+  "name": "Blognation",
+  "ideaPerson": "Costa",
+  "category": "Health Care",
+  "description": "Introduction of Local Anesthetic into Ear, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "3848",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/210x100.png/cc0000/ffffff",
+  "valuation": "9",
+  "ceo": "Costa Ramberg",
+  "country": "Poland",
+  "headQuarters": "Lubasz"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d0"
+  },
+  "name": "Viva",
+  "ideaPerson": "Mathian",
+  "category": "Health Care",
+  "description": "Drainage of Small Intestine, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "781",
+  "foundedIn": "2001",
+  "image": "http://dummyimage.com/156x100.png/cc0000/ffffff",
+  "valuation": "355",
+  "ceo": "Mathian Mangon",
+  "country": "South Africa",
+  "headQuarters": "Thabazimbi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d1"
+  },
+  "name": "Photospace",
+  "ideaPerson": "Iorgo",
+  "category": "n/a",
+  "description": "Replacement of Right Temporal Bone with Synthetic Substitute, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "870",
+  "foundedIn": "1994",
+  "image": "http://dummyimage.com/142x100.png/5fa2dd/ffffff",
+  "valuation": "417",
+  "ceo": "Iorgo Brenton",
+  "country": "Brazil",
+  "headQuarters": "Casimiro de Abreu"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d8"
+  },
+  "name": "Devcast",
+  "ideaPerson": "Ignatius",
+  "category": "Health Care",
+  "description": "Replacement of Lower Artery with Nonautologous Tissue Substitute, Open Approach",
+  "gender": "Male",
+  "companySize": "5932",
+  "foundedIn": "1988",
+  "image": "http://dummyimage.com/211x100.png/cc0000/ffffff",
+  "valuation": "678",
+  "ceo": "Ignatius Anster",
+  "country": "Indonesia",
+  "headQuarters": "Lembang"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07a"
+  },
+  "name": "Shufflester",
+  "ideaPerson": "Goldy",
+  "category": "Health Care",
+  "description": "Lower Arteries, Dilation",
+  "gender": "Female",
+  "companySize": "2839",
+  "foundedIn": "2000",
+  "image": "http://dummyimage.com/146x100.png/5fa2dd/ffffff",
+  "valuation": "547",
+  "ceo": "Goldy Sammon",
+  "country": "Palestinian Territory",
+  "headQuarters": "Ar Ramāḑīn"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b080"
+  },
+  "name": "Eire",
+  "ideaPerson": "Frannie",
+  "category": "n/a",
+  "description": "Removal of Drainage Device from Right Ankle Joint, Open Approach",
+  "gender": "Male",
+  "companySize": "338",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/110x100.png/ff4444/ffffff",
+  "valuation": "103",
+  "ceo": "Frannie Skedge",
+  "country": "Portugal",
+  "headQuarters": "Briteiros Santa Leocádia"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b085"
+  },
+  "name": "Jaloo",
+  "ideaPerson": "Felicdad",
+  "category": "Health Care",
+  "description": "Replacement of Inferior Mesenteric Vein with Synthetic Substitute, Open Approach",
+  "gender": "Female",
+  "companySize": "2749",
+  "foundedIn": "1996",
+  "image": "http://dummyimage.com/240x100.png/cc0000/ffffff",
+  "valuation": "366",
+  "ceo": "Felicdad Burdus",
+  "country": "Malawi",
+  "headQuarters": "Mulanje"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08b"
+  },
+  "name": "Eazzy",
+  "ideaPerson": "Wood",
+  "category": "Health Care",
+  "description": "Drainage of Left External Iliac Artery with Drainage Device, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "3507",
+  "foundedIn": "2007",
+  "image": "http://dummyimage.com/196x100.png/cc0000/ffffff",
+  "valuation": "439",
+  "ceo": "Wood Pol",
+  "country": "Peru",
+  "headQuarters": "Carabamba"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b094"
+  },
+  "name": "Innotype",
+  "ideaPerson": "Paco",
+  "category": "Technology",
+  "description": "Radiation Therapy, Skin, Beam Radiation",
+  "gender": "Polygender",
+  "companySize": "6104",
+  "foundedIn": "1995",
+  "image": "http://dummyimage.com/187x100.png/cc0000/ffffff",
+  "valuation": "169",
+  "ceo": "Paco Larn",
+  "country": "Poland",
+  "headQuarters": "Prusice"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b096"
+  },
+  "name": "Topiclounge",
+  "ideaPerson": "Barron",
+  "category": "Health Care",
+  "description": "Supplement Sigmoid Colon with Nonautologous Tissue Substitute, Via Natural or Artificial Opening Endoscopic",
+  "gender": "Male",
+  "companySize": "8074",
+  "foundedIn": "1988",
+  "image": "http://dummyimage.com/213x100.png/dddddd/000000",
+  "valuation": "340",
+  "ceo": "Barron Bidmead",
+  "country": "Belarus",
+  "headQuarters": "Mosar"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09a"
+  },
+  "name": "Skilith",
+  "ideaPerson": "Shaine",
+  "category": "Consumer Non-Durables",
+  "description": "Insertion of Infusion Device into Right Foot Vein, Open Approach",
+  "gender": "Genderqueer",
+  "companySize": "2298",
+  "foundedIn": "2006",
+  "image": "http://dummyimage.com/172x100.png/cc0000/ffffff",
+  "valuation": "499",
+  "ceo": "Shaine Prudence",
+  "country": "Portugal",
+  "headQuarters": "São Mateus"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09c"
+  },
+  "name": "Gigaclub",
+  "ideaPerson": "Susie",
+  "category": "Finance",
+  "description": "Removal of Intraluminal Device from Stomach, External Approach",
+  "gender": "Female",
+  "companySize": "2262",
+  "foundedIn": "1987",
+  "image": "http://dummyimage.com/169x100.png/cc0000/ffffff",
+  "valuation": "605",
+  "ceo": "Susie Gibbings",
+  "country": "Japan",
+  "headQuarters": "Honjō"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09f"
+  },
+  "name": "Tagpad",
+  "ideaPerson": "Ulberto",
+  "category": "Consumer Services",
+  "description": "Excision of Sacrococcygeal Joint, Percutaneous Approach, Diagnostic",
+  "gender": "Male",
+  "companySize": "7431",
+  "foundedIn": "2010",
+  "image": "http://dummyimage.com/147x100.png/5fa2dd/ffffff",
+  "valuation": "467",
+  "ceo": "Ulberto Dunn",
+  "country": "Indonesia",
+  "headQuarters": "Dinititi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a3"
+  },
+  "name": "Voonix",
+  "ideaPerson": "Powell",
+  "category": "Consumer Durables",
+  "description": "Lower Bones, Removal",
+  "gender": "Male",
+  "companySize": "9126",
+  "foundedIn": "2010",
+  "image": "http://dummyimage.com/229x100.png/5fa2dd/ffffff",
+  "valuation": "411",
+  "ceo": "Powell Dorant",
+  "country": "Indonesia",
+  "headQuarters": "Pancoran"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0aa"
+  },
+  "name": "Demimbu",
+  "ideaPerson": "Iver",
+  "category": "Consumer Durables",
+  "description": "Insertion of Intramedullary Internal Fixation Device into Left Tibia, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "9962",
+  "foundedIn": "2005",
+  "image": "http://dummyimage.com/149x100.png/ff4444/ffffff",
+  "valuation": "617",
+  "ceo": "Iver Pascho",
+  "country": "Indonesia",
+  "headQuarters": "Trenggulunan"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ac"
+  },
+  "name": "Lazz",
+  "ideaPerson": "Alexei",
+  "category": "Technology",
+  "description": "Drainage of Buttock Subcutaneous Tissue and Fascia, Open Approach, Diagnostic",
+  "gender": "Male",
+  "companySize": "6991",
+  "foundedIn": "2003",
+  "image": "http://dummyimage.com/118x100.png/dddddd/000000",
+  "valuation": "2",
+  "ceo": "Alexei Claiton",
+  "country": "China",
+  "headQuarters": "Zhitan"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ad"
+  },
+  "name": "Jaxbean",
+  "ideaPerson": "Bartel",
+  "category": "Capital Goods",
+  "description": "Repair Bilateral Breast, Via Natural or Artificial Opening Endoscopic",
+  "gender": "Male",
+  "companySize": "220",
+  "foundedIn": "2006",
+  "image": "http://dummyimage.com/225x100.png/cc0000/ffffff",
+  "valuation": "836",
+  "ceo": "Bartel Howick",
+  "country": "El Salvador",
+  "headQuarters": "Delgado"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0af"
+  },
+  "name": "Tambee",
+  "ideaPerson": "Timmy",
+  "category": "Finance",
+  "description": "Release Lingula Bronchus, Via Natural or Artificial Opening Endoscopic",
+  "gender": "Female",
+  "companySize": "2776",
+  "foundedIn": "1991",
+  "image": "http://dummyimage.com/197x100.png/5fa2dd/ffffff",
+  "valuation": "146",
+  "ceo": "Timmy Trippitt",
+  "country": "Lesotho",
+  "headQuarters": "Butha-Buthe"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b2"
+  },
+  "name": "Topiczoom",
+  "ideaPerson": "Carissa",
+  "category": "Basic Industries",
+  "description": "Fluoroscopy of Left Pulmonary Vein, Guidance",
+  "gender": "Female",
+  "companySize": "2923",
+  "foundedIn": "1993",
+  "image": "http://dummyimage.com/206x100.png/dddddd/000000",
+  "valuation": "491",
+  "ceo": "Carissa Klewi",
+  "country": "Japan",
+  "headQuarters": "Fukagawa"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b4"
+  },
+  "name": "Eamia",
+  "ideaPerson": "Nealson",
+  "category": "Capital Goods",
+  "description": "Removal of Internal Fixation Device from Lumbar Vertebra, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "3004",
+  "foundedIn": "1999",
+  "image": "http://dummyimage.com/199x100.png/dddddd/000000",
+  "valuation": "869",
+  "ceo": "Nealson Sindell",
+  "country": "Croatia",
+  "headQuarters": "Jablanovec"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b7"
+  },
+  "name": "Topicblab",
+  "ideaPerson": "Barbey",
+  "category": "Consumer Non-Durables",
+  "description": "Repair Coronary Artery, Two Arteries, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "1555",
+  "foundedIn": "2000",
+  "image": "http://dummyimage.com/123x100.png/5fa2dd/ffffff",
+  "valuation": "179",
+  "ceo": "Barbey Ellison",
+  "country": "Pakistan",
+  "headQuarters": "Dadu"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c0"
+  },
+  "name": "Buzzshare",
+  "ideaPerson": "Camey",
+  "category": "Miscellaneous",
+  "description": "Dilation of Right Internal Carotid Artery, Bifurcation, with Two Intraluminal Devices, Open Approach",
+  "gender": "Male",
+  "companySize": "4515",
+  "foundedIn": "1999",
+  "image": "http://dummyimage.com/117x100.png/5fa2dd/ffffff",
+  "valuation": "905",
+  "ceo": "Camey Daggett",
+  "country": "Ukraine",
+  "headQuarters": "Rudky"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c1"
+  },
+  "name": "Divape",
+  "ideaPerson": "Renata",
+  "category": "Consumer Services",
+  "description": "Drainage of Left Finger Phalangeal Joint, Percutaneous Approach, Diagnostic",
+  "gender": "Female",
+  "companySize": "9718",
+  "foundedIn": "1989",
+  "image": "http://dummyimage.com/136x100.png/cc0000/ffffff",
+  "valuation": "622",
+  "ceo": "Renata Gallaher",
+  "country": "Kazakhstan",
+  "headQuarters": "Arkalyk"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c2"
+  },
+  "name": "Topicstorm",
+  "ideaPerson": "Godfree",
+  "category": "Consumer Durables",
+  "description": "Drainage of Sigmoid Colon, Open Approach",
+  "gender": "Genderfluid",
+  "companySize": "3398",
+  "foundedIn": "1990",
+  "image": "http://dummyimage.com/241x100.png/cc0000/ffffff",
+  "valuation": "855",
+  "ceo": "Godfree Kenzie",
+  "country": "China",
+  "headQuarters": "Tongqing"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c4"
+  },
+  "name": "Jabbersphere",
+  "ideaPerson": "Woodrow",
+  "category": "n/a",
+  "description": "Reposition Left Peroneal Artery, Open Approach",
+  "gender": "Male",
+  "companySize": "5082",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/131x100.png/5fa2dd/ffffff",
+  "valuation": "317",
+  "ceo": "Woodrow Rosenfelt",
+  "country": "Canada",
+  "headQuarters": "Concord"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c5"
+  },
+  "name": "Aivee",
+  "ideaPerson": "Nicoli",
+  "category": "Technology",
+  "description": "Extirpation of Matter from Lumbar Sympathetic Nerve, Open Approach",
+  "gender": "Female",
+  "companySize": "3621",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/190x100.png/5fa2dd/ffffff",
+  "valuation": "414",
+  "ceo": "Nicoli Wardrope",
+  "country": "China",
+  "headQuarters": "Lang"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0ce"
+  },
+  "name": "Brainverse",
+  "ideaPerson": "Xenia",
+  "category": "Consumer Services",
+  "description": "Excision of Right Pulmonary Artery, Percutaneous Endoscopic Approach, Diagnostic",
+  "gender": "Female",
+  "companySize": "5055",
+  "foundedIn": "2007",
+  "image": "http://dummyimage.com/146x100.png/ff4444/ffffff",
+  "valuation": "86",
+  "ceo": "Xenia Okenfold",
+  "country": "Japan",
+  "headQuarters": "Namerikawa"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0cf"
+  },
+  "name": "Jamia",
+  "ideaPerson": "Jenna",
+  "category": "Public Utilities",
+  "description": "Drainage of Mesenteric Lymphatic with Drainage Device, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "3765",
+  "foundedIn": "1996",
+  "image": "http://dummyimage.com/232x100.png/dddddd/000000",
+  "valuation": "611",
+  "ceo": "Jenna Andrez",
+  "country": "Indonesia",
+  "headQuarters": "Bodeh"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d2"
+  },
+  "name": "Babbleset",
+  "ideaPerson": "Neddy",
+  "category": "n/a",
+  "description": "Bypass Left Axillary Artery to Left Lower Leg Artery, Open Approach",
+  "gender": "Male",
+  "companySize": "543",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/195x100.png/5fa2dd/ffffff",
+  "valuation": "684",
+  "ceo": "Neddy Miskimmon",
+  "country": "Russia",
+  "headQuarters": "Volgodonsk"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d3"
+  },
+  "name": "Voonix",
+  "ideaPerson": "Rochell",
+  "category": "n/a",
+  "description": "Bypass Thoracic Aorta, Descending to Pulmonary Trunk with Autologous Venous Tissue, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "6812",
+  "foundedIn": "2010",
+  "image": "http://dummyimage.com/219x100.png/cc0000/ffffff",
+  "valuation": "878",
+  "ceo": "Rochell Walsom",
+  "country": "Azerbaijan",
+  "headQuarters": "Samur"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d4"
+  },
+  "name": "Yodo",
+  "ideaPerson": "Harbert",
+  "category": "Consumer Durables",
+  "description": "Removal of Infusion Device from Left Ankle Joint, Open Approach",
+  "gender": "Male",
+  "companySize": "8802",
+  "foundedIn": "1985",
+  "image": "http://dummyimage.com/247x100.png/cc0000/ffffff",
+  "valuation": "641",
+  "ceo": "Harbert Slane",
+  "country": "China",
+  "headQuarters": "Wuxi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d5"
+  },
+  "name": "Skimia",
+  "ideaPerson": "Hedvige",
+  "category": "n/a",
+  "description": "Revision of Autologous Tissue Substitute in Sacrococcygeal Joint, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "6767",
+  "foundedIn": "2007",
+  "image": "http://dummyimage.com/141x100.png/ff4444/ffffff",
+  "valuation": "689",
+  "ceo": "Hedvige Macbane",
+  "country": "Luxembourg",
+  "headQuarters": "Esch-sur-Alzette"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b07c"
+  },
+  "name": "Devpoint",
+  "ideaPerson": "Gina",
+  "category": "n/a",
+  "description": "Supplement Right Fibula with Nonautologous Tissue Substitute, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "3688",
+  "foundedIn": "1992",
+  "image": "http://dummyimage.com/248x100.png/ff4444/ffffff",
+  "valuation": "194",
+  "ceo": "Gina Rafter",
+  "country": "Japan",
+  "headQuarters": "Iwakura"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b078"
+  },
+  "name": "Feedbug",
+  "ideaPerson": "Verna",
+  "category": "Consumer Durables",
+  "description": "Drainage of Right Subclavian Vein with Drainage Device, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "5141",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/125x100.png/ff4444/ffffff",
+  "valuation": "101",
+  "ceo": "Verna Banbridge",
+  "country": "China",
+  "headQuarters": "Xiali"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b088"
+  },
+  "name": "Muxo",
+  "ideaPerson": "Marie-jeanne",
+  "category": "Capital Goods",
+  "description": "Occlusion of Right Temporal Artery with Intraluminal Device, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "1959",
+  "foundedIn": "2010",
+  "image": "http://dummyimage.com/205x100.png/dddddd/000000",
+  "valuation": "170",
+  "ceo": "Marie-jeanne Targe",
+  "country": "United States",
+  "headQuarters": "New Hyde Park"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08d"
+  },
+  "name": "Browsetype",
+  "ideaPerson": "Robin",
+  "category": "Finance",
+  "description": "Extirpation of Matter from Subarachnoid Space, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "2181",
+  "foundedIn": "2005",
+  "image": "http://dummyimage.com/221x100.png/5fa2dd/ffffff",
+  "valuation": "849",
+  "ceo": "Robin Beincken",
+  "country": "Brazil",
+  "headQuarters": "Andradas"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08f"
+  },
+  "name": "Youfeed",
+  "ideaPerson": "Jeniece",
+  "category": "Energy",
+  "description": "Bypass Left External Iliac Artery to Lower Extremity Artery with Synthetic Substitute, Open Approach",
+  "gender": "Genderqueer",
+  "companySize": "1774",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/163x100.png/dddddd/000000",
+  "valuation": "468",
+  "ceo": "Jeniece Lawman",
+  "country": "China",
+  "headQuarters": "Yengiawat"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b090"
+  },
+  "name": "Quatz",
+  "ideaPerson": "Danna",
+  "category": "Health Care",
+  "description": "Excision of Right Fallopian Tube, Via Natural or Artificial Opening",
+  "gender": "Female",
+  "companySize": "7531",
+  "foundedIn": "2009",
+  "image": "http://dummyimage.com/224x100.png/cc0000/ffffff",
+  "valuation": "156",
+  "ceo": "Danna Lyard",
+  "country": "China",
+  "headQuarters": "Dongtundu"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b095"
+  },
+  "name": "Devify",
+  "ideaPerson": "Cathee",
+  "category": "Finance",
+  "description": "Destruction of Hepatic Vein, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "4808",
+  "foundedIn": "2009",
+  "image": "http://dummyimage.com/201x100.png/5fa2dd/ffffff",
+  "valuation": "67",
+  "ceo": "Cathee Arsmith",
+  "country": "Guatemala",
+  "headQuarters": "Cabañas"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b097"
+  },
+  "name": "Cogilith",
+  "ideaPerson": "Gasper",
+  "category": "Consumer Non-Durables",
+  "description": "Repair Coronary Artery, One Artery, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "4011",
+  "foundedIn": "2002",
+  "image": "http://dummyimage.com/102x100.png/ff4444/ffffff",
+  "valuation": "95",
+  "ceo": "Gasper Loughead",
+  "country": "Indonesia",
+  "headQuarters": "Tonggoh"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b098"
+  },
+  "name": "Tavu",
+  "ideaPerson": "Silvio",
+  "category": "n/a",
+  "description": "Revision of Infusion Device in Stomach, Percutaneous Endoscopic Approach",
+  "gender": "Genderqueer",
+  "companySize": "5333",
+  "foundedIn": "2011",
+  "image": "http://dummyimage.com/116x100.png/5fa2dd/ffffff",
+  "valuation": "881",
+  "ceo": "Silvio Elacoate",
+  "country": "Sweden",
+  "headQuarters": "Vimmerby"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09d"
+  },
+  "name": "Feedbug",
+  "ideaPerson": "Mace",
+  "category": "Finance",
+  "description": "Removal of Internal Fixation Device from Lumbar Vertebra, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "6808",
+  "foundedIn": "2009",
+  "image": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+  "valuation": "976",
+  "ceo": "Mace Maddie",
+  "country": "Belarus",
+  "headQuarters": "Osveya"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a5"
+  },
+  "name": "Eire",
+  "ideaPerson": "Vail",
+  "category": "Basic Industries",
+  "description": "Transfer Left Hand Muscle with Skin, Open Approach",
+  "gender": "Male",
+  "companySize": "6793",
+  "foundedIn": "2001",
+  "image": "http://dummyimage.com/161x100.png/5fa2dd/ffffff",
+  "valuation": "969",
+  "ceo": "Vail Blacksell",
+  "country": "Sweden",
+  "headQuarters": "Askim"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a9"
+  },
+  "name": "Jayo",
+  "ideaPerson": "Margot",
+  "category": "n/a",
+  "description": "Fusion of Cervical Vertebral Joint, Posterior Approach, Posterior Column, Open Approach",
+  "gender": "Female",
+  "companySize": "7894",
+  "foundedIn": "1996",
+  "image": "http://dummyimage.com/250x100.png/5fa2dd/ffffff",
+  "valuation": "61",
+  "ceo": "Margot Szwandt",
+  "country": "Indonesia",
+  "headQuarters": "Karangsari"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b3"
+  },
+  "name": "Wikibox",
+  "ideaPerson": "Amos",
+  "category": "Technology",
+  "description": "Drainage of Right Neck Lymphatic, Open Approach",
+  "gender": "Male",
+  "companySize": "737",
+  "foundedIn": "1993",
+  "image": "http://dummyimage.com/159x100.png/dddddd/000000",
+  "valuation": "715",
+  "ceo": "Amos Methley",
+  "country": "Costa Rica",
+  "headQuarters": "Esparza"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b6"
+  },
+  "name": "Twitternation",
+  "ideaPerson": "Randolph",
+  "category": "Energy",
+  "description": "Excision of Upper Esophagus, Open Approach",
+  "gender": "Male",
+  "companySize": "1416",
+  "foundedIn": "2011",
+  "image": "http://dummyimage.com/187x100.png/cc0000/ffffff",
+  "valuation": "949",
+  "ceo": "Randolph Errey",
+  "country": "Indonesia",
+  "headQuarters": "Tlogocilik"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b8"
+  },
+  "name": "Wordware",
+  "ideaPerson": "Brinna",
+  "category": "n/a",
+  "description": "Replacement of Right Ankle Joint with Synthetic Substitute, Cemented, Open Approach",
+  "gender": "Female",
+  "companySize": "8389",
+  "foundedIn": "2001",
+  "image": "http://dummyimage.com/156x100.png/cc0000/ffffff",
+  "valuation": "15",
+  "ceo": "Brinna Lackington",
+  "country": "China",
+  "headQuarters": "Shanghuang"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b9"
+  },
+  "name": "Eamia",
+  "ideaPerson": "De witt",
+  "category": "n/a",
+  "description": "Supplement Right Inguinal Region with Nonautologous Tissue Substitute, Open Approach",
+  "gender": "Male",
+  "companySize": "7368",
+  "foundedIn": "1994",
+  "image": "http://dummyimage.com/228x100.png/5fa2dd/ffffff",
+  "valuation": "154",
+  "ceo": "De witt Dinjes",
+  "country": "China",
+  "headQuarters": "Xindian"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c6"
+  },
+  "name": "Blogpad",
+  "ideaPerson": "Jolynn",
+  "category": "Energy",
+  "description": "Supplement Left Tibia with Autologous Tissue Substitute, Open Approach",
+  "gender": "Female",
+  "companySize": "8705",
+  "foundedIn": "2005",
+  "image": "http://dummyimage.com/193x100.png/cc0000/ffffff",
+  "valuation": "242",
+  "ceo": "Jolynn Hagstone",
+  "country": "China",
+  "headQuarters": "Huangling"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c7"
+  },
+  "name": "Tagfeed",
+  "ideaPerson": "Markus",
+  "category": "Consumer Non-Durables",
+  "description": "Insertion of Infusion Device into Right Lobe Liver, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "9396",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/237x100.png/dddddd/000000",
+  "valuation": "459",
+  "ceo": "Markus Casewell",
+  "country": "China",
+  "headQuarters": "Songkeng"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0cb"
+  },
+  "name": "Twimm",
+  "ideaPerson": "Nickey",
+  "category": "Finance",
+  "description": "Bypass Coronary Artery, Four or More Arteries from Coronary Artery with Autologous Venous Tissue, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "3437",
+  "foundedIn": "1994",
+  "image": "http://dummyimage.com/163x100.png/cc0000/ffffff",
+  "valuation": "847",
+  "ceo": "Nickey Conerding",
+  "country": "Philippines",
+  "headQuarters": "Calumpit"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0cd"
+  },
+  "name": "Layo",
+  "ideaPerson": "Seth",
+  "category": "Basic Industries",
+  "description": "Resection of Left Lower Arm and Wrist Tendon, Open Approach",
+  "gender": "Genderfluid",
+  "companySize": "1333",
+  "foundedIn": "2013",
+  "image": "http://dummyimage.com/190x100.png/ff4444/ffffff",
+  "valuation": "586",
+  "ceo": "Seth Edge",
+  "country": "Indonesia",
+  "headQuarters": "Jurak Lao’"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d6"
+  },
+  "name": "Dabtype",
+  "ideaPerson": "Wally",
+  "category": "Finance",
+  "description": "Dilation of Right External Carotid Artery with Drug-eluting Intraluminal Device, Open Approach",
+  "gender": "Male",
+  "companySize": "1628",
+  "foundedIn": "2002",
+  "image": "http://dummyimage.com/233x100.png/dddddd/000000",
+  "valuation": "611",
+  "ceo": "Wally Tames",
+  "country": "Greece",
+  "headQuarters": "Néa Karyá"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b081"
+  },
+  "name": "Gabvine",
+  "ideaPerson": "Ferne",
+  "category": "Consumer Services",
+  "description": "Fragmentation in Pancreatic Duct, Via Natural or Artificial Opening",
+  "gender": "Female",
+  "companySize": "8028",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/206x100.png/cc0000/ffffff",
+  "valuation": "147",
+  "ceo": "Ferne Diehn",
+  "country": "Syria",
+  "headQuarters": "Az Ziyārah"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b082"
+  },
+  "name": "Skibox",
+  "ideaPerson": "Regan",
+  "category": "Public Utilities",
+  "description": "Laser Interstitial Thermal Therapy of Thyroid",
+  "gender": "Male",
+  "companySize": "7877",
+  "foundedIn": "2002",
+  "image": "http://dummyimage.com/109x100.png/dddddd/000000",
+  "valuation": "500",
+  "ceo": "Regan Yakubov",
+  "country": "Ukraine",
+  "headQuarters": "Koreiz"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b084"
+  },
+  "name": "Yozio",
+  "ideaPerson": "Camella",
+  "category": "n/a",
+  "description": "Insertion of Contraceptive Device into Left Lower Leg Subcutaneous Tissue and Fascia, Open Approach",
+  "gender": "Female",
+  "companySize": "875",
+  "foundedIn": "2005",
+  "image": "http://dummyimage.com/180x100.png/dddddd/000000",
+  "valuation": "90",
+  "ceo": "Camella Callaway",
+  "country": "Indonesia",
+  "headQuarters": "Cinagrog Girang"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b086"
+  },
+  "name": "Rhyzio",
+  "ideaPerson": "Deidre",
+  "category": "Capital Goods",
+  "description": "Drainage of Right Metatarsal-Tarsal Joint, Percutaneous Approach, Diagnostic",
+  "gender": "Female",
+  "companySize": "550",
+  "foundedIn": "2004",
+  "image": "http://dummyimage.com/191x100.png/dddddd/000000",
+  "valuation": "540",
+  "ceo": "Deidre Prinne",
+  "country": "Pakistan",
+  "headQuarters": "Thul"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b087"
+  },
+  "name": "Centidel",
+  "ideaPerson": "Stefanie",
+  "category": "n/a",
+  "description": "Dilation of Right Common Carotid Artery, Bifurcation, with Four or More Intraluminal Devices, Percutaneous Approach",
+  "gender": "Female",
+  "companySize": "6441",
+  "foundedIn": "1995",
+  "image": "http://dummyimage.com/131x100.png/ff4444/ffffff",
+  "valuation": "345",
+  "ceo": "Stefanie Koppens",
+  "country": "Indonesia",
+  "headQuarters": "Lanos"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b08e"
+  },
+  "name": "Jamia",
+  "ideaPerson": "Aldrich",
+  "category": "Basic Industries",
+  "description": "Removal of Autologous Tissue Substitute from Peritoneum, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "2539",
+  "foundedIn": "2009",
+  "image": "http://dummyimage.com/148x100.png/cc0000/ffffff",
+  "valuation": "350",
+  "ceo": "Aldrich Baumler",
+  "country": "Czech Republic",
+  "headQuarters": "Zeleneč"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b092"
+  },
+  "name": "Podcat",
+  "ideaPerson": "Tye",
+  "category": "Consumer Non-Durables",
+  "description": "Replacement of Right Shoulder Joint with Synthetic Substitute, Glenoid Surface, Open Approach",
+  "gender": "Male",
+  "companySize": "7079",
+  "foundedIn": "2006",
+  "image": "http://dummyimage.com/168x100.png/ff4444/ffffff",
+  "valuation": "678",
+  "ceo": "Tye Sizland",
+  "country": "France",
+  "headQuarters": "Metz"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b099"
+  },
+  "name": "Jaxnation",
+  "ideaPerson": "Webster",
+  "category": "n/a",
+  "description": "Drainage of Olfactory Nerve, Open Approach",
+  "gender": "Male",
+  "companySize": "4251",
+  "foundedIn": "1989",
+  "image": "http://dummyimage.com/203x100.png/dddddd/000000",
+  "valuation": "587",
+  "ceo": "Webster Berth",
+  "country": "Madagascar",
+  "headQuarters": "Vohibinany"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b09e"
+  },
+  "name": "Centizu",
+  "ideaPerson": "Danna",
+  "category": "Health Care",
+  "description": "Drainage of Hepatic Vein, Open Approach, Diagnostic",
+  "gender": "Female",
+  "companySize": "3043",
+  "foundedIn": "2011",
+  "image": "http://dummyimage.com/166x100.png/5fa2dd/ffffff",
+  "valuation": "607",
+  "ceo": "Danna Featley",
+  "country": "China",
+  "headQuarters": "Pingtian"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a0"
+  },
+  "name": "Photojam",
+  "ideaPerson": "Shawna",
+  "category": "Consumer Durables",
+  "description": "Replacement of Left Lower Eyelid with Synthetic Substitute, Open Approach",
+  "gender": "Female",
+  "companySize": "1517",
+  "foundedIn": "1997",
+  "image": "http://dummyimage.com/127x100.png/cc0000/ffffff",
+  "valuation": "894",
+  "ceo": "Shawna Winscum",
+  "country": "Bulgaria",
+  "headQuarters": "Bolyarovo"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a2"
+  },
+  "name": "Skyndu",
+  "ideaPerson": "Verene",
+  "category": "Consumer Non-Durables",
+  "description": "Bypass Superior Mesenteric Vein to Lower Vein with Autologous Tissue Substitute, Percutaneous Endoscopic Approach",
+  "gender": "Female",
+  "companySize": "116",
+  "foundedIn": "2002",
+  "image": "http://dummyimage.com/233x100.png/ff4444/ffffff",
+  "valuation": "99",
+  "ceo": "Verene Harford",
+  "country": "Tunisia",
+  "headQuarters": "Sahline"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a4"
+  },
+  "name": "Lazz",
+  "ideaPerson": "Jacob",
+  "category": "Public Utilities",
+  "description": "Insertion of Infusion Device into Cervicothoracic Vertebral Joint, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "3543",
+  "foundedIn": "1995",
+  "image": "http://dummyimage.com/218x100.png/5fa2dd/ffffff",
+  "valuation": "372",
+  "ceo": "Jacob Bennit",
+  "country": "Netherlands",
+  "headQuarters": "Emmen"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a6"
+  },
+  "name": "Yodo",
+  "ideaPerson": "Lucien",
+  "category": "Finance",
+  "description": "Beam Radiation of Liver using Photons <1 MeV",
+  "gender": "Male",
+  "companySize": "7434",
+  "foundedIn": "2012",
+  "image": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
+  "valuation": "632",
+  "ceo": "Lucien Maidlow",
+  "country": "Serbia",
+  "headQuarters": "Kikinda"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0a8"
+  },
+  "name": "Zooveo",
+  "ideaPerson": "Guillermo",
+  "category": "n/a",
+  "description": "Insertion of Infusion Device into Left Thyroid Artery, Percutaneous Approach",
+  "gender": "Male",
+  "companySize": "3990",
+  "foundedIn": "2006",
+  "image": "http://dummyimage.com/199x100.png/cc0000/ffffff",
+  "valuation": "91",
+  "ceo": "Guillermo Canto",
+  "country": "France",
+  "headQuarters": "Marne-la-Vallée"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b0"
+  },
+  "name": "Meejo",
+  "ideaPerson": "Allys",
+  "category": "Consumer Non-Durables",
+  "description": "Reposition Right Ulna with Monoplanar External Fixation Device, Open Approach",
+  "gender": "Female",
+  "companySize": "5999",
+  "foundedIn": "1995",
+  "image": "http://dummyimage.com/136x100.png/5fa2dd/ffffff",
+  "valuation": "687",
+  "ceo": "Allys Fasham",
+  "country": "Ecuador",
+  "headQuarters": "Montecristi"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0b1"
+  },
+  "name": "Browsezoom",
+  "ideaPerson": "Base",
+  "category": "n/a",
+  "description": "Excision of Spinal Meninges, Open Approach",
+  "gender": "Male",
+  "companySize": "5527",
+  "foundedIn": "2007",
+  "image": "http://dummyimage.com/134x100.png/cc0000/ffffff",
+  "valuation": "109",
+  "ceo": "Base McGrey",
+  "country": "France",
+  "headQuarters": "Albertville"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0bd"
+  },
+  "name": "Demivee",
+  "ideaPerson": "Leann",
+  "category": "Finance",
+  "description": "Dilation of Left Common Carotid Artery, Open Approach",
+  "gender": "Female",
+  "companySize": "9898",
+  "foundedIn": "2000",
+  "image": "http://dummyimage.com/121x100.png/dddddd/000000",
+  "valuation": "732",
+  "ceo": "Leann Reddin",
+  "country": "China",
+  "headQuarters": "Qiaozhuang"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0c3"
+  },
+  "name": "Photojam",
+  "ideaPerson": "Eleanore",
+  "category": "Technology",
+  "description": "Inspection of Right Carpal Joint, External Approach",
+  "gender": "Female",
+  "companySize": "6556",
+  "foundedIn": "2008",
+  "image": "http://dummyimage.com/164x100.png/cc0000/ffffff",
+  "valuation": "801",
+  "ceo": "Eleanore Benoist",
+  "country": "Indonesia",
+  "headQuarters": "Drien Rampak"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0cc"
+  },
+  "name": "Latz",
+  "ideaPerson": "Isacco",
+  "category": "n/a",
+  "description": "Repair Right External Auditory Canal, Via Natural or Artificial Opening",
+  "gender": "Male",
+  "companySize": "4903",
+  "foundedIn": "2004",
+  "image": "http://dummyimage.com/201x100.png/5fa2dd/ffffff",
+  "valuation": "329",
+  "ceo": "Isacco Cardero",
+  "country": "China",
+  "headQuarters": "Shangjin"
+},{
+  "_id": {
+    "$oid": "63ed23ecc3f9033081e4b0d7"
+  },
+  "name": "Edgewire",
+  "ideaPerson": "Marv",
+  "category": "Finance",
+  "description": "Bypass Esophagus to Duodenum with Nonautologous Tissue Substitute, Percutaneous Endoscopic Approach",
+  "gender": "Male",
+  "companySize": "7225",
+  "foundedIn": "1967",
+  "image": "http://dummyimage.com/246x100.png/dddddd/000000",
+  "valuation": "454",
+  "ceo": "Marv Mouton",
+  "country": "Indonesia",
+  "headQuarters": "Sungsang"
+},{
+  "_id": {
+    "$oid": "63f393a35a91830cc47f87c7"
+  },
+  "spendingRequest": [],
+  "description": "AI based startup works the domain of Data science and AI",
+  "image": "",
+  "name": "Alteryx",
+  "ideaPerson": {
+    "$oid": "63e88d5dfc97346320cb3570"
+  },
+  "category": "SOCIAL",
+  "companySize": "10-100",
+  "valuation": 53345,
+  "ceo": "james scapa",
+  "gender": "male",
+  "country": "US",
+  "headQuarters": "MI Troy",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f39549a96de4375023b0b0"
+  },
+  "spendingRequest": [],
+  "description": "AI based startup works the domain of Data science and AI",
+  "image": "",
+  "name": "Navi",
+  "ideaPerson": {
+    "$oid": "63e88d5dfc97346320cb3570"
+  },
+  "category": "FINTECH",
+  "companySize": "100-1000",
+  "valuation": 53345,
+  "ceo": "Jane scapa",
+  "gender": "male",
+  "country": "US",
+  "headQuarters": "MI Troy",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4e9f372f1003a9c293251"
+  },
+  "description": "AI based startup works the domain of Data science and AI",
+  "image": "",
+  "name": "Navi",
+  "ideaPerson": {
+    "$oid": "63e88d5dfc97346320cb3570"
+  },
+  "category": "FINTECH",
+  "companySize": "100-1000",
+  "valuation": 53345,
+  "ceo": "Jane scapa",
+  "gender": "male",
+  "country": "US",
+  "headQuarters": "MI Troy",
+  "spendingRequest": [
+    {
+      "_id": {
+        "$oid": "63f4ea0972f1003a9c293256"
+      },
+      "spendingRequestID": {
+        "$oid": "63f4ea0972f1003a9c293253"
+      }
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "63f4fe76b13515f71dc4aa8e"
+  },
+  "description": "New Startup",
+  "image": "link",
+  "name": "ABC",
+  "ideaPerson": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "category": "FINTECH",
+  "companySize": "60",
+  "foundedIn": "1999",
+  "valuation": "5000000",
+  "ceo": "Harry",
+  "country": "India",
+  "headQuarters": "Pune",
+  "spendingRequest": [
+    {
+      "_id": {
+        "$oid": "63f59e399cd648fb7d969a27"
+      },
+      "spendingRequestID": {
+        "$oid": "63f59e389cd648fb7d969a24"
+      }
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "63f4ff07b13515f71dc4aa95"
+  },
+  "description": "New Startup",
+  "image": "link",
+  "name": "ABC",
+  "ideaPerson": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "category": "EDTECH",
+  "companySize": "60",
+  "foundedIn": "1999",
+  "valuation": "5000000",
+  "ceo": "Harry",
+  "country": "India",
+  "headQuarters": "Pune",
+  "spendingRequest": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f5010d9cd648fb7d9699a8"
+  },
+  "description": "New Startup",
+  "image": "link",
+  "name": "ABC",
+  "ideaPerson": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "category": "EDTECH",
+  "companySize": "60",
+  "foundedIn": "1999",
+  "valuation": "5000000",
+  "ceo": "Harry",
+  "country": "India",
+  "headQuarters": "Pune",
+  "spendingRequest": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f59e919cd648fb7d969a43"
+  },
+  "description": "New Startup",
+  "image": "link",
+  "name": "Voila",
+  "ideaPerson": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "category": "EDTECH",
+  "companySize": "60",
+  "foundedIn": "1999",
+  "valuation": "5000000",
+  "ceo": "Harry",
+  "country": "India",
+  "headQuarters": "Pune",
+  "spendingRequest": [
+    {
+      "_id": {
+        "$oid": "63f59eb69cd648fb7d969a4c"
+      },
+      "spendingRequestID": {
+        "$oid": "63f59eb59cd648fb7d969a49"
+      }
+    }
+  ],
+  "__v": 1
+}]
