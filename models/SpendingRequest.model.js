@@ -43,6 +43,7 @@ const SpendingRequest = new mongoose.Schema(
     },
     isApproved: {
       type: Boolean,
+      default: false,
     },
     isOpen: {
       type: Boolean,

@@ -98,7 +98,7 @@ router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
   let spending_requestID = req.params["spending_request"];
 
   try {
-    const { amount } = req.body;
+    let { amount } = req.body;
 
     let user = await UserModel.findById(investorID);
     let investor = await InvestorModel.findOne({ userDetails: user._id });
@@ -107,37 +107,38 @@ router.post("/invest/:startup/:spending_request", auth, async (req, res) => {
       spending_requestID
     );
 
-    console.log(user?._id,  startup?._id, spending_request?._id);
-    // let investment = new InvestmentModel({
-    //   amount,
-    //   user: investor._id,
-    //   startup: startup._id,
-    //   vendorAddress: "0xfe767676C7FF81e3DE2bFAeda06B08d5D8c99cf2",
-    //   investorAddress: "0x7C23A3a58177e1De920c08576A53e389b91cef8A",
-    // });
-    // await investment.save();
+    console.log(user?._id, startup?._id, spending_request?._id);
+    // console.log("Amount: " ,  +amount);
+    amount = +amount;
 
-    // let exists = investor.investments.find(
-    //   (i) => i.startupID.toString() === startupID
-    // );
-    // if (!exists) {
-    //   investor.investments.unshift({ startupID: startup._id });
-    //   await investor.save();
-    // }
+    let investment = new InvestmentModel({
+      amount,
+      investorId: investor._id,
+      startup: startup._id,
+      spendingRequestID: spending_requestID,
+      vendorAddress: spending_request.vendorWalletAddress,
+      investorAddress: user.walletAddress,
+    });
+    await investment.save();
 
-    spending_request.totalAmountRaised = spending_request.totalAmountRaised  + amount;
+    let exists = investor.investments.find(
+      (i) => i.startupID.toString() === startupID
+    );
+    if (!exists) {
+      investor.investments.unshift({ startupID: startup._id });
+      await investor.save();
+    }
+
+    spending_request.totalAmountRaised =
+      spending_request.totalAmountRaised + amount;
     if (spending_request.amount - spending_request.totalAmountRaised <= 0) {
       spending_request.isOpen = false;
     }
     await spending_request.save();
 
-    //
-    // sendTransaction(amount);
-
     return res.json({
       startup: startup,
       spending_request: spending_request,
-      
     });
   } catch (error) {
     console.log(error.message);

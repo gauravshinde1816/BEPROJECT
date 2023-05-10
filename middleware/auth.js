@@ -3,6 +3,9 @@ const config = require("config");
 
 const auth = (req, res, next) => {
   const token = req.header("Authorization");
+  // const token = ""
+  console.log(req.body)
+  console.log("Token " , token)
 
   if (!token) {
     return res.status(400).json({ msg: "Token not present" });

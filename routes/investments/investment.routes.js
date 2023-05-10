@@ -3,6 +3,7 @@ const auth = require("../../middleware/auth");
 const InvestmentModel = require("../../models/Investment.model");
 const InvestorModel = require("../../models/Investor.model");
 const StartupModel = require("../../models/Startup.model");
+const UserModel = require("../../models/User.model");
 
 const router = express.Router();
 
@@ -13,7 +14,9 @@ router.get("/", async (req, res) => {
 
 router.get("/investor", auth, async (req, res) => {
   const userId = req.user.id;
-  let results = await InvestmentModel.find({ user: userId });
+  let  investor = await InvestorModel.findOne({userDetails : userId})
+  console.log("investor : " , investor)
+  let results = await InvestmentModel.find({ investorId: investor._id });
   results = await Promise.all(
     results.map(async (investment, i) => {
       const startup = await StartupModel.findById(investment.startup);

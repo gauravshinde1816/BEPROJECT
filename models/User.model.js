@@ -30,6 +30,9 @@ const UserSchema = new mongoose.Schema(
       type: String,
       enum: ["INVESTOR", "IDEAPERSON", "VENDOR", "ADMIN"],
     },
+    walletAddress: {
+      type: String,
+    },
   },
   {
     timestamp: true,

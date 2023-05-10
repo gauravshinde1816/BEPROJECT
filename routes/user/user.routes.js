@@ -86,7 +86,7 @@ router.get("/profile", auth, async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const { name, age, password, address, interests, role, email } = req.body;
+    const { name, age, password, address, interests, role, email , walletAddress} = req.body;
 
     let user = await UserModel.findOne({ email });
 
@@ -105,6 +105,7 @@ router.post("/", async (req, res) => {
       interests,
       role,
       email,
+      walletAddress,
     });
 
     await user.save();

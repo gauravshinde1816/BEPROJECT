@@ -1,0 +1,901 @@
+[{
+  "_id": {
+    "$oid": "637cb8a93bf65847707b9e9b"
+  },
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1669117788567"
+    }
+  },
+  "title": "Spending request 1",
+  "amount": 500,
+  "productDetails": "Sample Spending request",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669118121201"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676744727093"
+    }
+  },
+  "__v": 6,
+  "isOpen": true,
+  "votes": []
+},{
+  "_id": {
+    "$oid": "637cb8b788151345b800c61c"
+  },
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1669118131908"
+    }
+  },
+  "title": "Spending request 1",
+  "amount": 500,
+  "productDetails": "Sample Spending request",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669118135481"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669118135481"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637cb92513cdf011186160c4"
+  },
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1669118214537"
+    }
+  },
+  "title": "Spending request 1",
+  "amount": 500,
+  "productDetails": "Sample Spending request",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669118245686"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669118245686"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637cbeaf8476b804cc3e31f3"
+  },
+  "title": "Spending request 2",
+  "amount": 500,
+  "productDetails": "Sample Spending request 2",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1669119723964"
+    }
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669119663969"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669119663969"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637cbf765e5c8d13d04b2feb"
+  },
+  "title": "Spending request 3",
+  "amount": 425,
+  "productDetails": "Sample Spending request 3",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1669119922672"
+    }
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669119862677"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669122124496"
+    }
+  },
+  "__v": 0,
+  "isOpen": false
+},{
+  "_id": {
+    "$oid": "63e5ed27967d854728edb191"
+  },
+  "isOpen": false,
+  "title": "Spending request 1",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63e5e94fd4696f0a549c6651"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676012899959"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676012839966"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676012839966"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f2031eb08f152b4025746a"
+  },
+  "isOpen": true,
+  "title": "Spending request 1",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676804954435"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676804894444"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676804894444"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f2038cd553f13d20c82f16"
+  },
+  "isOpen": true,
+  "title": "Spending request #234322",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805064013"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805004375"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805004375"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f203b977ee4e078418719e"
+  },
+  "isOpen": true,
+  "title": "Spending request #234322",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805109283"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805049551"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805049551"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f203f6107d9c38cc59e02e"
+  },
+  "isOpen": true,
+  "title": "Spending request #234322",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805170598"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805110863"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805110863"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f204536575d34f8cf02995"
+  },
+  "isOpen": true,
+  "title": "Spending request #234322",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805263467"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805203757"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805203757"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f204c3acd9dd19fce272a7"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805375312"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805315570"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805315570"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f204f1acd9dd19fce272ae"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805421609"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805361854"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805361854"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f2050716585d5b743755f3"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63e5e697b46f052b84a58475"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676805443533"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676805385718"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676805385718"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d69bb2200603b065b9f2"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924631151"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924571159"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924571159"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d6c9f06fd20458d9fe8d"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924677160"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924617168"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924617168"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d6ef6763a05ea8d64786"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924715634"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924655643"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924655643"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d75cc158f625383440bb"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924824361"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924764368"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924764368"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d7ac284fc858183b1f67"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924904914"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924844924"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924844924"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d7ce51b56f18983cc3c9"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676924938332"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924878340"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924878340"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d811de44e921703ce13c"
+  },
+  "isOpen": true,
+  "title": "Spending request #2343nkcn2",
+  "amount": 8000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676925005586"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676924945594"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676924945594"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d8acde44e921703ce141"
+  },
+  "isOpen": true,
+  "title": "Spending For Product ID #2343nkcn2",
+  "amount": 7342,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b077"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b077",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676925160711"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925100712"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676998059192"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d923de44e921703ce148"
+  },
+  "isOpen": true,
+  "title": "Spending For Product ID No #6546132131",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b079",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676925279344"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925219346"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925219346"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d93bc41ff82f54c51e0a"
+  },
+  "isOpen": true,
+  "title": "Spending For Product ID No #6546132131",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b079",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676925303131"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925243139"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925243139"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3d972c41ff82f54c51e0f"
+  },
+  "isOpen": true,
+  "title": "Spending For Product ID No #ckjbwkjkwjqkwnkqw",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63ed23ecc3f9033081e4b079"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63ed23ecc3f9033081e4b079",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676925358349"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676925298351"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676925298351"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f4ea0972f1003a9c293253"
+  },
+  "isOpen": true,
+  "title": "Spending For Product ID No #ckjbwkjkwjqkwnkqw",
+  "amount": 5000,
+  "ideaPersonID": {
+    "$oid": "63f3cda4dcadb429c8007155"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63f4e9f372f1003a9c293251"
+  },
+  "productDetails": "Sample Spending request for Startup ID 63f4e9f372f1003a9c293251",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1676995141473"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676995081475"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676995081475"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f59e389cd648fb7d969a24"
+  },
+  "isOpen": true,
+  "title": "Example spending request",
+  "amount": 10,
+  "ideaPersonID": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63f4fe76b13515f71dc4aa8e"
+  },
+  "productDetails": "sample description",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1677041268791"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677041208797"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677041208797"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f59eb59cd648fb7d969a49"
+  },
+  "isOpen": true,
+  "title": "For Marketing",
+  "amount": 10,
+  "ideaPersonID": {
+    "$oid": "63f4a21932635bc49c1ddb32"
+  },
+  "vendorID": {
+    "$oid": "63e5ea6d6476252749e64beb"
+  },
+  "startup": {
+    "$oid": "63f59e919cd648fb7d969a43"
+  },
+  "productDetails": "sample description",
+  "expiryTime": {
+    "$date": {
+      "$numberLong": "1677041393910"
+    }
+  },
+  "votes": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677041333911"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677041333911"
+    }
+  },
+  "__v": 0
+}]

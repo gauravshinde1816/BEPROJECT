@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 
 const InvestmentModel = new mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
-    },
     investorId: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
@@ -27,6 +23,12 @@ const InvestmentModel = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: "startup",
+    },
+
+    spendingRequestID: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: "spending_request",
     },
   },
   {
