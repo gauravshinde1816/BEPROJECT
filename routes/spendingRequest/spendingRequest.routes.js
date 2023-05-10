@@ -19,11 +19,26 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.post("/status/:spending_requestid", auth, async (req, res) => {
+  const ID = req.params["spending_requestid"];
+  try {
+    const SP = await SpendingRequestModel.findById(ID);
+
+    if (!SP) return res.status(400).json({ msg: "No Spending Request" });
+
+    SP.isApproved = true;
+    await SP.save();
+
+    return res.json(SP);
+  } catch (error) {
+    return res.status(500).json({ msg: "Internal server error" });
+  }
+});
+
 router.get("/byInvestor", auth, async (req, res) => {
   const userId = req.user.id;
   let investor = await InvestorModel.findOne({ userDetails: userId });
   let investments = await InvestmentModel.find({ investorId: investor._id });
-
 
   // const invest = await InvestorModel.find({ startup: "6456024602cc6e4bd09876ac" });
   // console.log("Investment : ", invest);
@@ -50,8 +65,8 @@ router.get("/byInvestor", auth, async (req, res) => {
 
   await Promise.all(
     startupIds.map(async (startupId) => {
-      const invest = await InvestorModel.find({ startup: startupId });
-      console.log(startupId ,  " " , invest)
+      const invest = await InvestmentModel.find({ startup: startupId });
+      console.log(startupId, " ", invest);
       srs.forEach((ele) => {
         ele["minCount"] = invest.length;
       });
@@ -68,9 +83,10 @@ router.get("/byInvestor", auth, async (req, res) => {
       productDetails: ele?.productDetails,
       totalAmountRaised: ele?.totalAmountRaised,
       approvals: ele?.votes?.length,
-      isApproved: ele?.isApproved,
-      status: ele?.votes?.length >  ele?.minCount  ? true : false,
-      minCount : ele?.minCount,
+      // isApproved: ele?.isApproved,
+      // status: ele?.votes?.length >= ele?.minCount ? true : false,
+      status: ele?.isApproved,
+      minCount: ele?.minCount,
       createdAt: ele?.createdAt,
       votes: ele?.votes,
     };
@@ -149,12 +165,20 @@ router.post("/:spending_requestid/upvote", auth, async (req, res) => {
       return res.status(400).json({ msg: "Spending Request not found" });
     }
 
+    const investments = await InvestmentModel.find({
+      startup: spending_request.startup,
+    });
+
     let exists = spending_request.votes.find((v) => v.user.toString() === user);
     if (exists) {
       return res.status(400).json({ msg: "User has already voted" });
     }
 
     spending_request.votes.unshift({ user: user });
+
+    if ( spending_request.votes.length >= investments.length ) {
+      spending_request.isApproved = true;
+    }
     await spending_request.save();
 
     return res.status(200).json(spending_request);
