@@ -7,6 +7,7 @@ const UserModel = require("../../models/User.model");
 const InvestorModel = require("../../models/Investor.model");
 const IdeaPersonModel = require("../../models/IdeaPerson.model");
 const VendorModel = require("../../models/Vendor.model");
+const AdminModel = require("../../models/Admin.model");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -54,7 +55,7 @@ router.get("/profile", auth, async (req, res) => {
 
       response.userType = "IDEAPERSON";
       response.details = ideapersonDetails;
-    } else {
+    } else if (user.role === "VENDOR") {
       const vendorDetails = await VendorModel.findOne({
         userDetails: req.user.id,
       });
@@ -64,7 +65,18 @@ router.get("/profile", auth, async (req, res) => {
 
       response.userType = "VENDOR";
       response.details = vendorDetails;
+    } else {
+      const adminDetails = await AdminModel.findOne({
+        userDetails: req.user.id,
+      });
+      if (!adminDetails) {
+        return res.status(400).json({ msg: " adminDetails Does not exists" });
+      }
+
+      response.userType = "ADMIN";
+      response.details = adminDetails;
     }
+
     return res.status(200).json(response);
   } catch (error) {
     console.log(error.message);
@@ -118,6 +130,14 @@ router.post("/", async (req, res) => {
         userDetails: user._id,
       });
       await vendor.save();
+    }
+
+    // if user is ADMIN
+    if (role == "ADMIN") {
+      const admin = new AdminModel({
+        userDetails: user._id,
+      });
+      await admin.save();
     }
 
     const payload = {
