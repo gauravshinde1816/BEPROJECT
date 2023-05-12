@@ -43,7 +43,7 @@ app.use("/investors", investorRoutes);
 app.use("/investments", investmentRoutes);
 
 //listen to PORT
-const PORT = 5001 || process.env.PORT;
+const PORT = 5000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log(`server started at ${PORT}`);
 });

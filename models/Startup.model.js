@@ -82,4 +82,4 @@ const StartupSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Startup", StartupSchema);
+module.exports = mongoose.model("startup", StartupSchema);
