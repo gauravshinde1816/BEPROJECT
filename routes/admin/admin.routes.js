@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 });
 
 // get all admins
-router.get("/spending-requests", async (req, res) => {
+router.get("/spendingRequests", async (req, res) => {
   const allStartups = await StartupModel.find({});
   const requiredStartups = allStartups
     .filter(async (startup) => {

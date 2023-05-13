@@ -33,7 +33,7 @@ router.get("/me", auth, async (req, res) => {
 router.get("/:startupid", async (req, res) => {
   try {
     const id = req.params["startupid"];
-    const startup = await StartupModel.findById(id);
+    const startup = await StartupModel.findById(id).populate("spendingRequest");
     if (!startup) {
       return res.status(400).json({ msg: "No startup with given ID" });
     }
