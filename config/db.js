@@ -4,7 +4,7 @@ const db = config.get("MONGO_URI");
 const db_local = config.get("MONGO_LOCAL")
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(db_local, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
