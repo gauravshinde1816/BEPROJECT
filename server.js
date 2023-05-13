@@ -7,6 +7,7 @@ const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/user/user.routes");
 const startupRoutes = require("./routes/startup/startup.routes");
 const spendingRequest = require("./routes/spendingRequest/spendingRequest.routes");
+const adminRoutes = require("./routes/admin/admin.routes");
 const investorRoutes = require("./routes/investor/investor.routes");
 const investmentRoutes = require("./routes/investments/investment.routes");
 const { auth } = require("express-openid-connect");
@@ -35,6 +36,7 @@ connectDB();
 //routes
 app.use("/", indexRoutes);
 app.use("/users", userRoutes);
+app.use("/admin", adminRoutes);
 app.use("/startups", startupRoutes);
 app.use("/spendingrequest", spendingRequest);
 app.use("/investors", investorRoutes);

@@ -34,14 +34,36 @@ router.get("/spendingRequests", async (req, res) => {
     requiredStartups.map(async (startup) => {
       const spendingRequestResults = await SpendingRequestModel.find({
         startup: startup._id,
-      });
+      }).populate("startup", "ideaPersonID");
       spendingRequestResults.map((sr) => {
         spendingRequests.push(sr);
       });
     })
   );
 
-  res.send(spendingRequests);
+  console.log(spendingRequests);
+
+  const results = spendingRequests.map((ele, id) => {
+    return {
+      srNo: id + 1,
+      //   user: userId,
+      _id: ele._id,
+      title: ele.title,
+      amount: ele.amount,
+      productDetails: ele?.productDetails,
+      totalAmountRaised: ele?.totalAmountRaised,
+      approvals: ele?.votes?.length,
+      isApproved: ele?.isApproved,
+      status: ele?.votes?.length >= ele?.minCount ? true : false,
+      status: ele?.isApproved,
+      minCount: ele?.minCount,
+      createdAt: ele?.createdAt,
+      votes: ele?.votes,
+      startupName: ele?.startup?.name,
+    };
+  });
+
+  res.json(results);
 });
 
 module.exports = router;
